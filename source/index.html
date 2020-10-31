@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Круизы в Антарктику</title>
+  <link rel="preload" href="fonts/montserrat-v14-cyrillic-regular.woff2" as="font">
+  <link rel="preload" href="fonts/montserrat-v14-cyrillic-500.woff2" as="font">
+  <link rel="preload" href="fonts/montserrat-v14-cyrillic-600.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -13,7 +16,7 @@
     <include src="build/img/sprite_auto.svg"></include>
   </div>
 
-  <header class="page-header page-header--closed page-header--nojs">
+  <header class="page-header page-header--opened page-header--nojs">
     <div class="page-header__wrapper wrapper">
       <a aria-label="Логотип проекта Круизы в Антарктику">
         <svg class="page-header__logo" width="70" height="38">
@@ -41,6 +44,55 @@
       </nav>
     </div>
   </header>
+
+  <footer class="page-header page-header--footer">
+    <div class="page-header__wrapper page-header__wrapper--footer wrapper">
+      <a aria-label="Логотип проекта Круизы в Антарктику">
+        <svg class="page-header__logo page-header__logo--footer" width="70" height="38">
+          <use xlink:href="#icon-logo"></use>
+        </svg>
+      </a>
+      <ul class="page-header__menu page-header__menu--footer">
+          <li class="page-header__item">
+              <a class="page-header__link page-header__link--footer" href="#">Преимущества</a>
+          </li>
+          <li class="page-header__item">
+              <a class="page-header__link page-header__link--footer" href="#">Направления</a>
+          </li>
+          <li class="page-header__item">
+              <a class="page-header__link page-header__link--footer" href="#">Ближайшие круизы</a>
+          </li>
+          <li class="page-header__item">
+            <a class="page-header__link page-header__link--footer" href="#">Контакты</a>
+        </li>
+      </ul>
+      <div class="social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Мы в Фейсбуке">
+              <svg class="social__icon social__icon--fb" width="11" height="20">
+                <use xlink:href="#icon-fb"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Мы в Инстаграм">
+              <svg class="social__icon social__icon--insta" width="20" height="20">
+                <use xlink:href="#icon-insta"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+              <a class="social__link" href="#" aria-label="Мы в Твитере">
+                <svg class="social__icon social__icon--twiter" width="20" height="16">
+                  <use xlink:href="#icon-twiter"></use>
+                </svg>
+              </a>
+          </li>
+      </ul>
+    </div>
+    </div>
+  </footer>
 
   <script src="js/script.js"></script>
 </body>

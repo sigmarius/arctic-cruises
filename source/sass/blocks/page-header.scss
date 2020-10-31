@@ -1,19 +1,35 @@
 .page-header {
   position: relative;
   background-color: $bg-hero-color;
+
+  &--footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: $text-color;
+  }
 }
 
 .page-header__wrapper {
-  padding: 35px 0 0;
+  padding: 35px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  &--footer {
+    padding: 46px 0;
+    justify-content: flex-start;
+  }
 }
 
 .page-header__logo {
   width: 70px;
   height: 38px;
   fill: $text-white;
+
+  &--footer {
+    margin-right: 42px;
+  }
 }
 
 .page-header__nav {
@@ -30,6 +46,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  &--footer {
+    width: 51%;
+    margin-right: auto;
+  }
 }
 
 .page-header__link {
@@ -42,25 +63,47 @@
 @media (max-width: $tablet) {
   .page-header__wrapper {
     padding: 30px 45px 0;
+
+    &--footer {
+      padding: 48px 45px;
+    }
   }
 
   .page-header__logo {
     width: 38px;
     height: 20px;
+
+    &--footer {
+      margin-right: 25px;
+    }
   }
 
   .page-header__nav {
     width: 74%;
   }
 
+  .page-header__menu {
+    &--footer {
+      width: 65%;
+    }
+  }
+
   .page-header__link {
     @include font(14px, 17px);
+
+    &--footer {
+      @include font(12px, 15px);
+    }
   }
 }
 
 @media (max-width: $mobile) {
   .page-header {
     background-color: $text-white;
+
+    &--footer {
+      background-color: $text-color;
+    }
   }
 
   .page-header__wrapper {
@@ -68,12 +111,22 @@
     padding: 20px 15px 52px;
     flex-direction: column;
     align-items: flex-start;
+
+    &--footer {
+      min-height: 283px;
+      padding: 40px 15px 35px;
+    }
   }
 
   .page-header__logo {
     width: 42px;
     height: 22px;
     fill: $text-color;
+
+    &--footer {
+      margin-bottom: 23px;
+      fill: $text-white;
+    }
   }
 
   .page-header__toggle {
@@ -140,6 +193,13 @@
     padding: 10px 0;
     display: block;
     color: $text-color;
+
+    &--footer {
+      @include font(12px, 15px);
+      margin-bottom: 17px;
+      padding: 0;
+      color: $text-white;
+    }
   }
 
   .page-header--closed .page-header__menu {

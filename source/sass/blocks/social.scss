@@ -1,0 +1,42 @@
+.social__list {
+  @include clear-list;
+
+  display: flex;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 33px;
+}
+
+@media (max-width: $tablet) {
+  .social__list {
+    padding-top: 4px;
+  }
+
+  .social__item:not(:last-child) {
+    margin-right: 23px;
+  }
+
+  .social__icon {
+    &--fb {
+      width: 9px;
+      height: 16px;
+    }
+
+    &--insta {
+      width: 16px;
+      height: 16px;
+    }
+
+    &--twiter {
+      width: 16px;
+      height: 13px;
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .social__list {
+    padding-top: 10px;
+  }
+}

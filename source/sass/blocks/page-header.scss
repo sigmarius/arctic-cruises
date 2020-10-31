@@ -13,6 +13,7 @@
 .page-header__logo {
   width: 70px;
   height: 38px;
+  fill: $text-white;
 }
 
 .page-header__nav {
@@ -72,6 +73,7 @@
   .page-header__logo {
     width: 42px;
     height: 22px;
+    fill: $text-color;
   }
 
   .page-header__toggle {

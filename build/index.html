@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,38 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <h1>Добро пожаловать в Лигу А.</h1>
+
+  <header class="page-header page-header--closed page-header--nojs">
+    <div class="page-header__wrapper wrapper">
+      <a>
+        <picture>
+          <source media="(max-width: 767px)" srcset="img/logo-mobile.svg">
+          <source media="(max-width: 1023px)" srcset="img/logo-tablet.svg">
+          <img class="page-header__logo" src="img/logo-desktop.svg" width="70" height="38" alt="Логотип проекта Круизы в Антарктику">
+        </picture>
+      </a>
+      <nav class="page-header__nav">
+          <button class="page-header__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="page-header__menu">
+              <li class="page-header__item">
+                  <a class="page-header__link" href="#">Преимущества</a>
+              </li>
+              <li class="page-header__item">
+                  <a class="page-header__link" href="#">Направления</a>
+              </li>
+              <li class="page-header__item">
+                  <a class="page-header__link" href="#">Ближайшие круизы</a>
+              </li>
+              <li class="page-header__item">
+                <a class="page-header__link" href="#">Контакты</a>
+            </li>
+          </ul>
+      </nav>
+    </div>
+  </header>
+
+  <script src="js/script.js"></script>
 </body>
 </html>

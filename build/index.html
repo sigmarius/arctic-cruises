@@ -81,6 +81,38 @@
     </div>
   </header>
 
+  <main class="main">
+    <section class="hero">
+      <div class="hero__wrapper wrapper">
+        <h1 class="hero__title">Круизы в&nbsp;Антарктику</h1>
+        <p class="hero__text">Волшебный мир айсбергов и пингвинов</p>
+      </div>
+      <picture>
+        <source media="(max-width: 767px)" srcset="img/hero-mobile@1x.webp 1x, img/hero-mobile@2x.webp 2x" type="image/webp">
+        <source media="(max-width: 1023px)" srcset="img/hero-tablet@1x.webp 1x, img/hero-tablet@2x.webp 2x" type="image/webp">
+        <source media="(min-width: 1024px)" srcset="img/hero-desktop@1x.webp 1x, img/hero-desktop@2x.webp 2x" type="image/webp">
+        <!-- 1x: 1366px; 2x: 2732px -->
+        <img class="hero__image hero__image--moved" src="img/hero-desktop@1x.jpg" srcset="img/hero-desktop@2x.jpg 2x" width="1366" height="650" alt="Невероятно красивый арктический пейзаж">
+      </picture>
+    </section>
+
+    <section class="promo">
+      <div class="promo__wrapper wrapper">
+        <div class="promo__text">
+          <h2 class="promo__title">Путешествие на&nbsp;край Земли</h2>
+          <p class="promo__lead">Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром Антарктики. Наш круизный лайнер отвезет вас на&nbsp;край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</p>
+        </div>
+        <picture>
+          <source media="(max-width: 767px)" srcset="img/promo-mobile@1x.webp 1x, img/promo-mobile@2x.webp 2x" type="image/webp">
+          <source media="(max-width: 1023px)" srcset="img/promo-tablet@1x.webp 1x, img/promo-tablet@2x.webp 2x" type="image/webp">
+          <source media="(min-width: 1024px)" srcset="img/promo-desktop@1x.webp 1x, img/promo-desktop@2x.webp 2x" type="image/webp">
+          <!-- 1x: 560px; 2x: 1120px -->
+          <img class="promo__image" src="img/promo-desktop@1x.jpg" srcset="img/promo-desktop@2x.jpg 2x" width="560" height="301" alt="Счастливые арктические пингвины">
+        </picture>
+      </div>
+    </section>
+  </main>
+
   <footer class="page-header page-header--footer">
     <div class="page-header__wrapper page-header__wrapper--footer wrapper">
       <a aria-label="Логотип проекта Круизы в Антарктику">

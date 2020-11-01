@@ -31,3 +31,14 @@
     url("../fonts/montserrat-v14-cyrillic-600.woff2") format("woff2"),
     url("../fonts/montserrat-v14-cyrillic-600.woff") format("woff");
 }
+/* montserrat-700 - cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Montserrat Bold"),
+    local("Montserrat-Bold"),
+    url("../fonts/montserrat-v15-cyrillic-700.woff2") format("woff2"),
+    url("../fonts/montserrat-v15-cyrillic-700.woff") format("woff");
+}

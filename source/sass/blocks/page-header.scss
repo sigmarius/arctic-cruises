@@ -1,10 +1,8 @@
 .page-header {
   position: relative;
-  background-color: $bg-hero-color;
+  background-color: transparent;
 
   &--footer {
-    position: fixed;
-    bottom: 0;
     width: 100%;
     background-color: $text-color;
   }
@@ -99,7 +97,7 @@
 
 @media (max-width: $mobile) {
   .page-header {
-    background-color: $text-white;
+    background-color: transparent;
 
     &--footer {
       background-color: $text-color;
@@ -107,7 +105,6 @@
   }
 
   .page-header__wrapper {
-    min-height: 300px;
     padding: 20px 15px 52px;
     flex-direction: column;
     align-items: flex-start;
@@ -136,7 +133,7 @@
     z-index: 2;
 
     display: block;
-    width: 22px;
+    width: 25px;
     height: 19px;
 
     background-color: transparent;
@@ -155,8 +152,8 @@
     width: 25px;
     height: 3px;
 
-    background-color: $text-color;
-    box-shadow: 0 8px 0 0 $text-color, 0 16px 0 0 $text-color;
+    background-color: $text-white;
+    box-shadow: 0 8px 0 0 $text-white, 0 16px 0 0 $text-white;
   }
 
   .page-header--opened .page-header__toggle {
@@ -199,6 +196,19 @@
       margin-bottom: 17px;
       padding: 0;
       color: $text-white;
+    }
+  }
+
+  .page-header--opened {
+    .page-header__wrapper {
+      min-height: 300px;
+      background-color: $text-white;
+    }
+  }
+
+  .page-header--closed {
+    .page-header__logo {
+      fill: $text-white;
     }
   }
 

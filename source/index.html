@@ -8,6 +8,8 @@
   <link rel="preload" href="fonts/montserrat-v14-cyrillic-regular.woff2" as="font">
   <link rel="preload" href="fonts/montserrat-v14-cyrillic-500.woff2" as="font">
   <link rel="preload" href="fonts/montserrat-v14-cyrillic-600.woff2" as="font">
+  <link rel="preload" href="fonts/montserrat-v15-cyrillic-700.woff2" as="font">
+  <script src="js/picturefill.min.js"></script>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -55,6 +57,9 @@
         <source media="(max-width: 767px)" srcset="img/hero-mobile@1x.webp 1x, img/hero-mobile@2x.webp 2x" type="image/webp">
         <source media="(max-width: 1023px)" srcset="img/hero-tablet@1x.webp 1x, img/hero-tablet@2x.webp 2x" type="image/webp">
         <source media="(min-width: 1024px)" srcset="img/hero-desktop@1x.webp 1x, img/hero-desktop@2x.webp 2x" type="image/webp">
+
+        <source media="(max-width: 767px)" srcset="img/hero-mobile@1x.jpg 1x, img/hero-mobile@2x.jpg 2x">
+        <source media="(max-width: 1023px)" srcset="img/hero-tablet@1x.jpg 1x, img/hero-tablet@2x.jpg 2x">
         <!-- 1x: 1366px; 2x: 2732px -->
         <img class="hero__image hero__image--moved" src="img/hero-desktop@1x.jpg" srcset="img/hero-desktop@2x.jpg 2x" width="1366" height="650" alt="Невероятно красивый арктический пейзаж">
       </picture>
@@ -70,9 +75,33 @@
           <source media="(max-width: 767px)" srcset="img/promo-mobile@1x.webp 1x, img/promo-mobile@2x.webp 2x" type="image/webp">
           <source media="(max-width: 1023px)" srcset="img/promo-tablet@1x.webp 1x, img/promo-tablet@2x.webp 2x" type="image/webp">
           <source media="(min-width: 1024px)" srcset="img/promo-desktop@1x.webp 1x, img/promo-desktop@2x.webp 2x" type="image/webp">
+
+          <source media="(max-width: 767px)" srcset="img/promo-mobile@1x.jpg 1x, img/promo-mobile@2x.jpg 2x">
+          <source media="(max-width: 1023px)" srcset="img/promo-tablet@1x.jpg 1x, img/promo-tablet@2x.jpg 2x">
           <!-- 1x: 560px; 2x: 1120px -->
           <img class="promo__image" src="img/promo-desktop@1x.jpg" srcset="img/promo-desktop@2x.jpg 2x" width="560" height="301" alt="Счастливые арктические пингвины">
         </picture>
+      </div>
+    </section>
+
+    <section class="feature">
+      <div class="feature__wrapper wrapper">
+        <h2 class="feature__title">Преимущества</h2>
+        <ul class="feature__list">
+          <li class="feature__item feature__item--one">
+            <h3 class="feature__item-title">Небольшой круизный&nbsp;лайнер</h3>
+            <p class="feature__item-text">Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и&nbsp;очередей и&nbsp;даст возможность насладиться видами и&nbsp;природой.</p>
+          </li>
+          <li class="feature__item feature__item--two">
+            <h3 class="feature__item-title">Система все&nbsp;включено</h3>
+            <p class="feature__item-text">Все наши круизы работают
+              по&nbsp;системе “Все Включено”. Великолепные блюда и&nbsp;безлимитный бар доступны для&nbsp;вас 24&nbsp;часа.</p>
+          </li>
+          <li class="feature__item feature__item--three">
+            <h3 class="feature__item-title">Экскурсионные туры на Zodiac</h3>
+            <p class="feature__item-text">Экскурсионные туры к&nbsp;берегам Антарктиды совершаются на&nbsp;оборудованных лодках типа&nbsp;Zodiac в&nbsp;сопровождении опытных экскурсоводов.</p>
+          </li>
+        </ul>
       </div>
     </section>
   </main>

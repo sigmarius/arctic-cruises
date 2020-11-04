@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -838,7 +837,7 @@ a {
 @media (max-width: 767px) {
   .feature {
     height: auto;
-    padding-bottom: 39px;
+    padding-bottom: 37px;
     background-image: url("../img/feature-bg-mobile@1x.jpg"); } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
     .feature {
@@ -910,22 +909,22 @@ a {
   position: relative;
   width: 23%;
   min-height: 386px;
-  margin-bottom: 29px;
-  /*временные стили*/ }
-  .cruises__item:hover {
-    -webkit-transition: all 1s ease-in-out 1s;
-    transition: all 1s ease-in-out 1s; }
-    .cruises__item:hover .cruises__item-front {
-      display: none; }
-    .cruises__item:hover .cruises__item-back {
-      display: block; }
+  margin-bottom: 29px; }
+  .cruises__item:hover .cruises__item-front, .cruises__item:focus .cruises__item-front {
+    display: none; }
+  .cruises__item:hover .cruises__item-back, .cruises__item:focus .cruises__item-back {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .cruises__item--active .cruises__item-front {
+    display: none; }
+  .cruises__item--active .cruises__item-back {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
 
 .cruises__item-front {
-  position: absolute;
-  top: 0;
-  left: 0;
-  /*временные стили*/
-  display: none; }
+  display: block; }
   .cruises__item-front .cruises__image {
     margin: 0;
     margin-bottom: 0;
@@ -944,26 +943,34 @@ a {
       height: 386px; }
 
 .cruises__item-back {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 260px;
-  height: 386px;
-  padding: 27px 25px 35px;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 70px 25px 35px;
   background-color: #011c40; }
 
 .cruises__name {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 0;
   padding: 0;
   font-size: 18px;
   line-height: 27px;
+  position: absolute;
+  top: 28px;
+  left: 25px;
   font-weight: 500;
   color: #f9fbfd; }
 
 .cruises__description {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 0;
   padding: 0;
   font-size: 14px;
   line-height: 20px; }
@@ -975,6 +982,8 @@ a {
     margin-bottom: 12px;
     padding: 0;
     color: #d8d8d9; }
+    .cruises__description dd:last-child {
+      margin-bottom: 0; }
 
 .cruises__link {
   font-size: 14px;
@@ -987,3 +996,41 @@ a {
   text-align: center;
   color: #011c40;
   background-color: #f9fbfd; }
+
+@media (max-width: 1023px) {
+  .cruises__wrapper {
+    padding: 90px 60px 0; }
+  .cruises__title {
+    font-size: 26px;
+    line-height: 39px; }
+  .cruises__item {
+    width: 48%;
+    margin-bottom: 26px; }
+  .cruises__item-front .cruises__image figcaption {
+    bottom: 32px;
+    left: 34px; }
+  .cruises__item-front .cruises__image img {
+    width: 100%;
+    height: auto; }
+  .cruises__item-back {
+    padding: 70px 35px 35px; }
+  .cruises__name {
+    top: 29px;
+    left: 37px; } }
+
+@media (max-width: 767px) {
+  .cruises__wrapper {
+    padding: 55px 25px 0; }
+  .cruises__title {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 32px; }
+  .cruises__item {
+    width: 100%; }
+  .cruises__item-front .cruises__image figcaption {
+    bottom: 22px;
+    left: 25px; }
+  .cruises__item-back {
+    padding: 69px 25px 35px; }
+  .cruises__name {
+    left: 25px; } }

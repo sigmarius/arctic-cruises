@@ -1,7 +1,6 @@
 'use strict';
 
 // мобильное меню-гамбургер
-
 (function () {
   var pageHeader = document.querySelector('.page-header');
   var headerToggle = document.querySelector('.page-header__toggle');
@@ -23,4 +22,21 @@
       heroImage.classList.remove('hero__image--moved');
     }
   });
+})();
+
+
+// карточки путешествий
+(function () {
+  var cruiseItems = Array.from(document.querySelectorAll('.cruises__item'));
+
+  cruiseItems.forEach(function (item) {
+    item.addEventListener('touchstart', function () {
+      if (item.classList.contains('cruises__item--active')) {
+        item.classList.remove('cruises__item--active');
+      } else {
+        item.classList.add('cruises__item--active');
+      }
+    });
+  });
+
 })();

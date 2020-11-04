@@ -27,26 +27,30 @@
   min-height: 386px;
   margin-bottom: 29px;
 
-  /*временные стили*/
-  &:hover {
-    transition: all 1s ease-in-out 1s;
-
+  &:hover,
+  &:focus {
     .cruises__item-front {
       display: none;
     }
 
     .cruises__item-back {
-      display: block;
+      display: flex;
+    }
+  }
+
+  &--active {
+    .cruises__item-front {
+      display: none;
+    }
+
+    .cruises__item-back {
+      display: flex;
     }
   }
 }
 
 .cruises__item-front {
-  position: absolute;
-  top: 0;
-  left: 0;
-  /*временные стили*/
-  display: none;
+  display: block;
 
   .cruises__image {
     @include clear-content(0);
@@ -69,24 +73,27 @@
 }
 
 .cruises__item-back {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 260px;
-  height: 386px;
-  padding: 27px 25px 35px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 70px 25px 35px;
   background-color: $text-color;
 }
 
 .cruises__name {
-  @include clear-content(15px);
+  @include clear-content(0);
   @include font(18px, 27px);
+  position: absolute;
+  top: 28px;
+  left: 25px;
   font-weight: 500;
   color: $text-white;
 }
 
 .cruises__description {
-  @include clear-content(30px);
+  @include clear-content(0);
   @include font(14px, 20px);
 
   dt {
@@ -97,6 +104,10 @@
   dd {
     @include clear-content(12px);
     color: $text-grey;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -110,4 +121,74 @@
   text-align: center;
   color: $text-color;
   background-color: $text-white;
+}
+
+@media (max-width: $tablet) {
+  .cruises__wrapper {
+    padding: 90px 60px 0;
+  }
+
+  .cruises__title {
+    @include font(26px, 39px);
+  }
+
+  .cruises__item {
+    width: 48%;
+    margin-bottom: 26px;
+  }
+
+  .cruises__item-front {
+    .cruises__image {
+      figcaption {
+        bottom: 32px;
+        left: 34px;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .cruises__item-back {
+    padding: 70px 35px 35px;
+  }
+
+  .cruises__name {
+    top: 29px;
+    left: 37px;
+  }
+}
+
+@media (max-width: $mobile) {
+  .cruises__wrapper {
+    padding: 55px 25px 0;
+  }
+
+  .cruises__title {
+    @include font(24px, 36px);
+    margin-bottom: 32px;
+  }
+
+  .cruises__item {
+    width: 100%;
+  }
+
+  .cruises__item-front {
+    .cruises__image {
+      figcaption {
+        bottom: 22px;
+        left: 25px;
+      }
+    }
+  }
+
+  .cruises__item-back {
+    padding: 69px 25px 35px;
+  }
+
+  .cruises__name {
+    left: 25px;
+  }
 }

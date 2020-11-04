@@ -1,0 +1,11 @@
+.button {
+  @include font(14px, 21px);
+  width: 100%;
+  padding: 12px 15px 8px;
+  font-weight: 600;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  color: $text-color;
+  background-color: $text-white;
+}

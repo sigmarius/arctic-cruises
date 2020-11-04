@@ -1,5 +1,5 @@
 .cruises {
-  margin-bottom: 90px;
+  margin-bottom: 83px;
 }
 
 .cruises__wrapper {
@@ -111,19 +111,11 @@
   }
 }
 
-.cruises__link {
-  @include font(14px, 21px);
-  width: 100%;
-  padding: 12px 15px 8px;
-  font-weight: 600;
-  display: inline-block;
-  vertical-align: middle;
-  text-align: center;
-  color: $text-color;
-  background-color: $text-white;
-}
-
 @media (max-width: $tablet) {
+  .cruises {
+    margin-bottom: 60px;
+  }
+
   .cruises__wrapper {
     padding: 90px 60px 0;
   }
@@ -134,7 +126,7 @@
 
   .cruises__item {
     width: 48%;
-    margin-bottom: 26px;
+    margin-bottom: 27px;
   }
 
   .cruises__item-front {
@@ -162,6 +154,10 @@
 }
 
 @media (max-width: $mobile) {
+  .cruises {
+    margin-bottom: 31px;
+  }
+
   .cruises__wrapper {
     padding: 55px 25px 0;
   }

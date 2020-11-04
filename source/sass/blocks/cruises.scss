@@ -1,0 +1,113 @@
+.cruises {
+  margin-bottom: 90px;
+}
+
+.cruises__wrapper {
+  padding: 110px 15px 0;
+}
+
+.cruises__title {
+  @include clear-content(49px);
+  @include font(28px, 42px);
+  font-weight: 600;
+  text-align: center;
+  color: $text-color;
+}
+
+.cruises__list {
+  @include clear-list;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.cruises__item {
+  position: relative;
+  width: 23%;
+  min-height: 386px;
+  margin-bottom: 29px;
+
+  /*временные стили*/
+  &:hover {
+    transition: all 1s ease-in-out 1s;
+
+    .cruises__item-front {
+      display: none;
+    }
+
+    .cruises__item-back {
+      display: block;
+    }
+  }
+}
+
+.cruises__item-front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /*временные стили*/
+  display: none;
+
+  .cruises__image {
+    @include clear-content(0);
+    position: relative;
+
+    figcaption {
+      @include font(18px, 27px);
+      position: absolute;
+      bottom: 27px;
+      left: 30px;
+      font-weight: 500;
+      color: $text-white;
+    }
+
+    img {
+      width: 260px;
+      height: 386px;
+    }
+  }
+}
+
+.cruises__item-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 260px;
+  height: 386px;
+  padding: 27px 25px 35px;
+  background-color: $text-color;
+}
+
+.cruises__name {
+  @include clear-content(15px);
+  @include font(18px, 27px);
+  font-weight: 500;
+  color: $text-white;
+}
+
+.cruises__description {
+  @include clear-content(30px);
+  @include font(14px, 20px);
+
+  dt {
+    font-weight: 500;
+    color: $text-white;
+  }
+
+  dd {
+    @include clear-content(12px);
+    color: $text-grey;
+  }
+}
+
+.cruises__link {
+  @include font(14px, 21px);
+  width: 100%;
+  padding: 12px 15px 8px;
+  font-weight: 600;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  color: $text-color;
+  background-color: $text-white;
+}

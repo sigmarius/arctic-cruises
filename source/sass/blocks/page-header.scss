@@ -56,6 +56,15 @@
 
   font-weight: 500;
   color: $text-white;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (max-width: $tablet) {

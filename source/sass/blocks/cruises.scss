@@ -26,17 +26,7 @@
   width: 23%;
   min-height: 386px;
   margin-bottom: 29px;
-
-  &:hover,
-  &:focus {
-    .cruises__item-front {
-      display: none;
-    }
-
-    .cruises__item-back {
-      display: flex;
-    }
-  }
+  cursor: pointer;
 
   &--active {
     .cruises__item-front {
@@ -113,7 +103,7 @@
 
 @media (max-width: $tablet) {
   .cruises {
-    margin-bottom: 60px;
+    margin-bottom: 56px;
   }
 
   .cruises__wrapper {

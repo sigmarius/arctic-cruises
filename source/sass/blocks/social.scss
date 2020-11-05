@@ -8,6 +8,17 @@
   margin-right: 33px;
 }
 
+.social__link {
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 @media (max-width: $tablet) {
   .social__list {
     padding-top: 4px;

@@ -27,16 +27,21 @@
 
 // карточки путешествий
 (function () {
-  var cruiseItems = Array.from(document.querySelectorAll('.cruises__item'));
+  var cruiseItems = document.querySelectorAll('.cruises__item');
 
-  cruiseItems.forEach(function (item) {
-    item.addEventListener('touchstart', function () {
+  var addItemHoverHandler = function (item) {
+    var toggleActiveHandler = function () {
       if (item.classList.contains('cruises__item--active')) {
         item.classList.remove('cruises__item--active');
       } else {
         item.classList.add('cruises__item--active');
       }
-    });
-  });
+    };
+    item.addEventListener('mouseover', toggleActiveHandler);
+    item.addEventListener('mouseout', toggleActiveHandler);
+  };
 
+  for (var i = 0; i < cruiseItems.length; i++) {
+    addItemHoverHandler(cruiseItems[i]);
+  }
 })();

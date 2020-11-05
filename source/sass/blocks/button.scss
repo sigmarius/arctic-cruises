@@ -8,4 +8,14 @@
   text-align: center;
   color: $text-color;
   background-color: $text-white;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

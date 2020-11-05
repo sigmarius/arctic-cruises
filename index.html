@@ -151,7 +151,7 @@
                 <dt>Цена</dt>
                 <dd>11500 $</dd>
               </dl>
-              <a class="cruises__link" href="#">Забронировать</a>
+              <a class="cruises__button button" href="#">Забронировать</a>
             </div>
           </li>
           <li class="cruises__item cruises__item--active">
@@ -182,7 +182,7 @@
                 <dt>Цена</dt>
                 <dd>от 14500 $</dd>
               </dl>
-              <a class="cruises__link" href="#">Забронировать</a>
+              <a class="cruises__button button" href="#">Забронировать</a>
             </div>
           </li>
           <li class="cruises__item">
@@ -213,7 +213,7 @@
                 <dt>Цена</dt>
                 <dd>от 14500 $</dd>
               </dl>
-              <a class="cruises__link" href="#">Забронировать</a>
+              <a class="cruises__button button" href="#">Забронировать</a>
             </div>
           </li>
           <li class="cruises__item">
@@ -244,7 +244,7 @@
                 <dt>Цена</dt>
                 <dd>от 9700 $</dd>
               </dl>
-              <a class="cruises__link" href="#">Забронировать</a>
+              <a class="cruises__button button" href="#">Забронировать</a>
             </div>
           </li>
           <li class="cruises__item">
@@ -275,7 +275,7 @@
                 <dt>Цена</dt>
                 <dd>от 18600 $</dd>
               </dl>
-              <a class="cruises__link" href="#">Забронировать</a>
+              <a class="cruises__button button" href="#">Забронировать</a>
             </div>
           </li>
           <li class="cruises__item">
@@ -306,7 +306,7 @@
                 <dt>Цена</dt>
                 <dd>от 11700 $</dd>
               </dl>
-              <a class="cruises__link" href="#">Забронировать</a>
+              <a class="cruises__button button" href="#">Забронировать</a>
             </div>
           </li>
           <li class="cruises__item">
@@ -337,7 +337,7 @@
                 <dt>Цена</dt>
                 <dd>от 12500 $</dd>
               </dl>
-              <a class="cruises__link" href="#">Забронировать</a>
+              <a class="cruises__button button" href="#">Забронировать</a>
             </div>
           </li>
           <li class="cruises__item">
@@ -368,10 +368,31 @@
                 <dt>Цена</dt>
                 <dd>от 12300 $</dd>
               </dl>
-              <a class="cruises__link" href="#">Забронировать</a>
+              <a class="cruises__button button" href="#">Забронировать</a>
             </div>
           </li>
         </ul>
+      </div>
+    </section>
+
+    <section class="feedback">
+      <div class="feedback__wrapper wrapper">
+        <div class="feedback__text-wrapper">
+          <h2 class="feedback__title">Раннее бронирование</h2>
+          <p class="feedback__text">Забронируйте тур за&nbsp;3-6&nbsp;месяцев до&nbsp;даты выезда и&nbsp;сэкономьте до 50%</p>
+        </div>
+        <form class="feedback__form" action="https://echo.htmlacademy.ru" method="POST">
+          <p class="feedback__form-text">Оставьте заявку и&nbsp;мы&nbsp;свяжемся с вами в&nbsp;ближайшее время</p>
+          <label class="visually-hidden" for="name">Имя</label>
+          <input class="feedback__form-input" type="text" id="name" name="name" placeholder="Валерия">
+          <label class="visually-hidden" for="phone">Номер телефона</label>
+          <input class="feedback__form-input" type="tel" id="phone" name="phone" pattern="[0-9]{11}" placeholder="89236889975">
+          <label class="visually-hidden" for="email">E-mail</label>
+          <input class="feedback__form-input" type="email" id="email" name="email" placeholder="grishaewa.lera@gmail.com">
+          <input class="feedback__form-input feedback__form-input--checkbox visually-hidden" type="checkbox" id="agreement" name="agreement" checked="">
+          <label class="feedback__form-label" for="agreement">Я согласен на обработку моих&nbsp;персональных данных</label>
+        <button class="feedback__form-button button" type="submit">Оставить заявку</button>
+        </form>
       </div>
     </section>
   </main>

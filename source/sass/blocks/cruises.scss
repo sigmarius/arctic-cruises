@@ -28,6 +28,7 @@
   margin-bottom: 29px;
   cursor: pointer;
 
+  &:hover,
   &--active {
     .cruises__item-front {
       display: none;
@@ -37,14 +38,28 @@
       display: flex;
     }
   }
+
+  &--active:hover {
+    .cruises__item-front {
+      display: block;
+    }
+
+    .cruises__item-back {
+      display: none;
+    }
+  }
 }
 
 .cruises__item-front {
   display: block;
+  width: 100%;
+  height: 100%;
 
   .cruises__image {
     @include clear-content(0);
     position: relative;
+    min-width: 260px;
+    height: 386px;
 
     figcaption {
       @include font(18px, 27px);
@@ -53,11 +68,6 @@
       left: 30px;
       font-weight: 500;
       color: $text-white;
-    }
-
-    img {
-      width: 260px;
-      height: 386px;
     }
   }
 }
@@ -121,14 +131,16 @@
 
   .cruises__item-front {
     .cruises__image {
-      figcaption {
-        bottom: 32px;
-        left: 34px;
-      }
+      min-width: 309px;
 
       img {
         width: 100%;
-        height: auto;
+        height: 100%;
+      }
+
+      figcaption {
+        bottom: 32px;
+        left: 34px;
       }
     }
   }
@@ -163,6 +175,8 @@
 
   .cruises__item-front {
     .cruises__image {
+      min-width: 270px;
+
       figcaption {
         bottom: 22px;
         left: 25px;

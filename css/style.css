@@ -609,24 +609,6 @@ a {
 
 .hero {
   min-height: 658px; }
-  .hero > div {
-    padding: 158px 95px 0; }
-  .hero h1 {
-    margin: 0;
-    margin-bottom: 12px;
-    padding: 0;
-    font-size: 54px;
-    line-height: 66px;
-    font-weight: 700;
-    color: #f9fbfd; }
-  .hero p {
-    font-size: 20px;
-    line-height: 24px;
-    margin: 0;
-    margin-bottom: 0;
-    padding: 0;
-    font-weight: 400;
-    color: #f9fbfd; }
   .hero img {
     position: absolute;
     top: 0;
@@ -635,49 +617,73 @@ a {
     height: 650px;
     width: 100%; }
 
+.hero__wrapper {
+  padding: 158px 95px 0; }
+  .hero__wrapper h1 {
+    margin: 0;
+    margin-bottom: 12px;
+    padding: 0;
+    font-size: 54px;
+    line-height: 66px;
+    font-weight: 700;
+    color: #f9fbfd; }
+  .hero__wrapper p {
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0;
+    margin-bottom: 0;
+    padding: 0;
+    font-weight: 400;
+    color: #f9fbfd; }
+
 @media (max-width: 1023px) {
   .hero {
     min-height: 675px; }
-    .hero > div {
-      padding: 214px 46px 0; }
-    .hero h1 {
+    .hero img {
+      height: 638px; }
+  .hero__wrapper {
+    padding: 214px 46px 0; }
+    .hero__wrapper h1 {
       font-size: 50px;
       line-height: 61px; }
-    .hero p {
+    .hero__wrapper p {
       font-size: 18px;
-      line-height: 22px; }
-    .hero img {
-      height: 638px; } }
+      line-height: 22px; } }
 
 @media (max-width: 767px) {
   .hero {
     min-height: 460px; }
-    .hero > div {
-      padding: 79px 18px 0; }
-    .hero h1 {
-      font-size: 36px;
-      line-height: 45px; }
-    .hero p {
-      font-size: 16px;
-      line-height: 22px;
-      padding-right: 53px; }
     .hero img {
       min-width: 320px;
-      height: 500px; } }
+      height: 500px; }
+  .hero__wrapper {
+    padding: 79px 18px 0; }
+    .hero__wrapper h1 {
+      font-size: 36px;
+      line-height: 45px; }
+    .hero__wrapper p {
+      font-size: 16px;
+      line-height: 22px;
+      padding-right: 53px; } }
 
 .promo {
   margin-bottom: 116px; }
-  .promo > div {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
-    .promo > div div {
-      width: 50%;
-      padding: 56px 45px 0 0; }
-  .promo h2 {
+
+.promo__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .promo__wrapper img {
+    width: 560px;
+    height: 301px; }
+
+.promo__text {
+  width: 50%;
+  padding: 56px 45px 0 0; }
+  .promo__text h2 {
     margin: 0;
     margin-bottom: 24px;
     padding: 0;
@@ -685,57 +691,54 @@ a {
     line-height: 42px;
     font-weight: 600;
     color: #011c40; }
-  .promo p {
+  .promo__text p {
     margin: 0;
     margin-bottom: 0;
     padding: 0;
     font-size: 16px;
     line-height: 24px;
     color: #011c40; }
-  .promo img {
-    width: 560px;
-    height: 301px; }
 
 @media (max-width: 1023px) {
   .promo {
     margin-bottom: 94px; }
-    .promo > div div {
-      padding: 0 15px 0 45px; }
-    .promo h2 {
+    .promo img {
+      width: 324px;
+      height: 264px;
+      margin: 9px 45px 0 0; }
+  .promo__text {
+    padding: 0 15px 0 45px; }
+    .promo__text h2 {
       font-size: 26px;
       line-height: 36px;
       margin-bottom: 15px;
       padding-right: 25px; }
-    .promo p {
+    .promo__text p {
       font-size: 16px;
-      line-height: 24px; }
-    .promo img {
-      width: 324px;
-      height: 264px;
-      margin: 9px 45px 0 0; } }
+      line-height: 24px; } }
 
 @media (max-width: 767px) {
   .promo {
     margin-bottom: 61px; }
-    .promo > div {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; }
-      .promo > div div {
-        width: 100%;
-        margin-bottom: 32px;
-        padding: 0 15px; }
-    .promo h2 {
-      font-size: 24px;
-      line-height: 34px; }
-    .promo img {
+  .promo__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .promo__wrapper img {
       width: 290px;
       height: 186px;
-      margin: 0; } }
+      margin: 0; }
+  .promo__text {
+    width: 100%;
+    margin-bottom: 32px;
+    padding: 0 15px; }
+    .promo__text h2 {
+      font-size: 24px;
+      line-height: 34px; } }
 
 .feature {
   width: 100%;

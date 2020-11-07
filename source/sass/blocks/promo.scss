@@ -1,84 +1,84 @@
 .promo {
   margin-bottom: 116px;
-}
 
-.promo__wrapper {
-  display: flex;
-  justify-content: space-between;
-}
+  > div {
+    display: flex;
+    justify-content: space-between;
 
-.promo__text {
-  width: 50%;
-  padding: 56px 45px 0 0;
-}
+    div {
+      width: 50%;
+      padding: 56px 45px 0 0;
+    }
+  }
 
-.promo__title {
-  @include clear-content(24px);
-  @include font(28px, 42px);
-  font-weight: 600;
-  color: $text-color;
-}
+  h2 {
+    @include clear-content(24px);
+    @include font(28px, 42px);
+    font-weight: 600;
+    color: $text-color;
+  }
 
-.promo__lead {
-  @include clear-content(0);
-  @include font(16px, 24px);
-  color: $text-color;
-}
+  p {
+    @include clear-content(0);
+    @include font(16px, 24px);
+    color: $text-color;
+  }
 
-.promo__image {
-  width: 560px;
-  height: 301px;
+  img {
+    width: 560px;
+    height: 301px;
+  }
 }
 
 @media (max-width: $tablet) {
   .promo {
     margin-bottom: 94px;
-  }
 
-  .promo__text {
-    padding: 0 15px 0 45px;
-  }
+    > div div {
+      padding: 0 15px 0 45px;
+    }
 
-  .promo__title {
-    @include font(26px, 36px);
-    margin-bottom: 15px;
-    padding-right: 25px;
-  }
+    h2 {
+      @include font(26px, 36px);
+      margin-bottom: 15px;
+      padding-right: 25px;
+    }
 
-  .promo__lead {
-    @include font(16px, 24px);
-  }
+    p {
+      @include font(16px, 24px);
+    }
 
-  .promo__image {
-    width: 324px;
-    height: 264px;
-    margin: 9px 45px 0 0;
+    img {
+      width: 324px;
+      height: 264px;
+      margin: 9px 45px 0 0;
+    }
   }
 }
 
 @media (max-width: $mobile) {
   .promo {
     margin-bottom: 61px;
-  }
 
-  .promo__wrapper {
-    flex-direction: column;
-    align-items: center;
-  }
+    > div {
+      flex-direction: column;
+      align-items: center;
 
-  .promo__text {
-    width: 100%;
-    margin-bottom: 32px;
-    padding: 0 15px;
-  }
+      div {
+        width: 100%;
+        margin-bottom: 32px;
+        padding: 0 15px;
+      }
+    }
 
-  .promo__title {
-    @include font(24px, 34px);
-  }
+    h2 {
+      @include font(24px, 34px);
+    }
 
-  .promo__image {
-    width: 290px;
-    height: 186px;
-    margin: 0;
+    img {
+      width: 290px;
+      height: 186px;
+      margin: 0;
+    }
   }
 }

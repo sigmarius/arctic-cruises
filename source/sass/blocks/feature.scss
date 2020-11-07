@@ -8,18 +8,18 @@
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/feature-bg-desktop@2x.jpg");
   }
-}
 
-.feature__wrapper {
-  padding: 110px 0 0 0;
-}
+  > div {
+    padding: 110px 0 0 0;
+  }
 
-.feature__title {
-  @include clear-content(50px);
-  @include font(28px, 42px);
-  font-weight: 600;
-  text-align: center;
-  color: $text-color;
+  h2 {
+    @include clear-content(50px);
+    @include font(28px, 42px);
+    font-weight: 600;
+    text-align: center;
+    color: $text-color;
+  }
 }
 
 .feature__list {
@@ -34,8 +34,27 @@
   padding: 80px 20px 25px 30px;
   background-color: $text-white;
 
+  h3 {
+    @include clear-content(8px);
+    @include font(18px, 27px);
+    position: relative;
+    font-weight: 500;
+    color: $text-color;
+
+    &::before {
+      position: absolute;
+      left: 0;
+    }
+  }
+
+  p {
+    @include clear-content(0);
+    @include font(14px, 20px);
+    color: $text-color;
+  }
+
   &--ship {
-    .feature__item-title::before {
+    h3::before {
       top: -51px;
       left: -4px;
       width: 27px;
@@ -47,7 +66,7 @@
   &--checked {
     padding-right: 49px;
 
-    .feature__item-title::before {
+    h3::before {
       top: -46px;
       width: 38px;
       height: 21px;
@@ -56,36 +75,17 @@
   }
 
   &--zodiac {
-    .feature__item-text {
-      padding-right: 60px;
-    }
-
-    .feature__item-title::before {
+    h3::before {
       top: -47px;
       width: 42px;
       height: 15px;
       content: url("../img/zodiac.svg");
     }
+
+    p {
+      padding-right: 60px;
+    }
   }
-}
-
-.feature__item-title {
-  @include clear-content(8px);
-  @include font(18px, 27px);
-  position: relative;
-  font-weight: 500;
-  color: $text-color;
-
-  &::before {
-    position: absolute;
-    left: 0;
-  }
-}
-
-.feature__item-text {
-  @include clear-content(0);
-  @include font(14px, 20px);
-  color: $text-color;
 }
 
 @media (max-width: $tablet) {
@@ -96,48 +96,48 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/feature-bg-tablet@2x.jpg");
     }
-  }
 
-  .feature__wrapper {
-    padding: 87px 42px 0;
-  }
+    > div {
+      padding: 87px 42px 0;
+    }
 
-  .feature__title {
-    @include font(26px, 39px);
+    h2 {
+      @include font(26px, 39px);
+    }
   }
 
   .feature__item {
     padding: 74px 20px 20px 22px;
 
+    h3 {
+      @include font(18px, 25px);
+    }
+
     &--ship {
-      .feature__item-title::before {
+      h3::before {
         width: 21px;
         height: 26px;
       }
     }
 
     &--checked {
-      .feature__item-title::before {
+      h3::before {
         width: 33px;
         height: 19px;
       }
     }
 
     &--zodiac {
-      .feature__item-text {
-        padding-right: 3px;
-      }
-
-      .feature__item-title::before {
+      h3::before {
         top: -44px;
         width: 38px;
         height: 13px;
       }
-    }
-  }
 
-  .feature__item-title {
-    @include font(18px, 25px);
+      p {
+        padding-right: 3px;
+      }
+    }
   }
 }
 
@@ -150,15 +150,15 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/feature-bg-mobile@2x.jpg");
     }
-  }
 
-  .feature__wrapper {
-    padding: 57px 15px 0;
-  }
+    > div {
+      padding: 57px 15px 0;
+    }
 
-  .feature__title {
-    @include font(24px, 36px);
-    margin-bottom: 30px;
+    h2 {
+      @include font(24px, 36px);
+      margin-bottom: 30px;
+    }
   }
 
   .feature__list {
@@ -170,14 +170,18 @@
     margin-bottom: 30px;
     padding: 71px 20px 20px 20px;
 
+    h3 {
+      line-height: 25px;
+    }
+
     &--ship {
-      .feature__item-title::before {
+      h3::before {
         left: -7px;
       }
     }
 
     &--checked {
-      .feature__item-title {
+      h3 {
         padding-right: 35px;
 
         &::before {
@@ -188,22 +192,18 @@
     }
 
     &--zodiac {
-      .feature__item-title {
+      h3 {
         padding-right: 50px;
+
+        &::before {
+          top: -42px;
+          left: -2px;
+        }
       }
 
-      .feature__item-text {
+      p {
         padding-right: 3px;
       }
-
-      .feature__item-title::before {
-        top: -42px;
-        left: -2px;
-      }
     }
-  }
-
-  .feature__item-title {
-    line-height: 25px;
   }
 }

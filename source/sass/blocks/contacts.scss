@@ -1,7 +1,9 @@
-.contacts__wrapper {
-  padding-top: 120px;
-  display: flex;
-  justify-content: space-between;
+.contacts {
+  > div {
+    padding-top: 120px;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .contacts__block {
@@ -9,6 +11,29 @@
 
   &--text {
     padding: 75px 0 30px 80px;
+
+    p {
+      @include clear-content(33px);
+      @include font(18px, 27px);
+      font-weight: 500;
+      color: $text-color;
+    }
+
+    address,
+    a {
+      @include clear-content(22px);
+      @include font(16px, 24px);
+      position: relative;
+      padding-left: 30px;
+      font-style: normal;
+      color: $text-color;
+    }
+
+    svg {
+      position: absolute;
+      top: -2px;
+      left: 0;
+    }
   }
 
   &--map {
@@ -38,38 +63,11 @@
   }
 }
 
-.contacts__text {
-  width: 43%;
-}
-
-.contacts__lead {
-  @include clear-content(33px);
-  @include font(18px, 27px);
-  font-weight: 500;
-  color: $text-color;
-}
-
-.contacts__way {
-  @include clear-content(22px);
-  @include font(16px, 24px);
-  position: relative;
-  padding-left: 30px;
-  color: $text-color;
-
-  &--address {
-    font-style: normal;
-  }
-}
-
-.contacts__icon {
-  position: absolute;
-  top: -2px;
-  left: 0;
-}
-
 @media (max-width: $tablet) {
-  .contacts__wrapper {
-    padding: 100px 45px 0;
+  .contacts {
+    > div {
+      padding: 100px 45px 0;
+    }
   }
 
   .contacts__block {
@@ -86,24 +84,24 @@
 
     &--text {
       padding: 67px 0 30px 15px;
-    }
-  }
 
-  .contacts__lead {
-    margin-bottom: 25px;
-  }
+      p {
+        margin-bottom: 25px;
+      }
 
-  .contacts__way {
-    &--address svg {
-      top: 5px;
+      address svg {
+        top: 5px;
+      }
     }
   }
 }
 
 @media (max-width: $mobile) {
-  .contacts__wrapper {
-    flex-direction: column;
-    padding: 59px 17px 0;
+  .contacts {
+    > div {
+      flex-direction: column;
+      padding: 59px 17px 0;
+    }
   }
 
   .contacts__block {

@@ -1,82 +1,78 @@
 .hero {
   min-height: 658px;
-}
 
-.hero__wrapper {
-  padding: 158px 95px 0;
-}
+  > div {
+    padding: 158px 95px 0;
+  }
 
-.hero__title {
-  @include clear-content(12px);
-  @include font(54px, 66px);
+  h1 {
+    @include clear-content(12px);
+    @include font(54px, 66px);
 
-  font-weight: 700;
-  color: $text-white;
-}
+    font-weight: 700;
+    color: $text-white;
+  }
 
-.hero__text {
-  @include font(20px, 24px);
-  @include clear-content(0);
+  p {
+    @include font(20px, 24px);
+    @include clear-content(0);
 
-  font-weight: 400;
-  color: $text-white;
-}
+    font-weight: 400;
+    color: $text-white;
+  }
 
-.hero__image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  height: 650px;
-  width: 100%;
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 650px;
+    width: 100%;
+  }
 }
 
 @media (max-width: $tablet) {
   .hero {
     min-height: 675px;
-  }
 
-  .hero__wrapper {
-    padding: 214px 46px 0;
-  }
+    > div {
+      padding: 214px 46px 0;
+    }
 
-  .hero__title {
-    @include font(50px, 61px);
-  }
+    h1 {
+      @include font(50px, 61px);
+    }
 
-  .hero__text {
-    @include font(18px, 22px);
-  }
+    p {
+      @include font(18px, 22px);
+    }
 
-  .hero__image {
-    height: 638px;
+    img {
+      height: 638px;
+    }
   }
 }
 
 @media (max-width: $mobile) {
   .hero {
     min-height: 460px;
-  }
 
-  .hero__wrapper {
-    padding: 79px 18px 0;
-  }
+    > div {
+      padding: 79px 18px 0;
+    }
 
-  .hero__title {
-    @include font(36px, 45px);
-  }
+    h1 {
+      @include font(36px, 45px);
+    }
 
-  .hero__text {
-    @include font(16px, 22px);
-    padding-right: 53px;
-  }
+    p {
+      @include font(16px, 22px);
+      padding-right: 53px;
+    }
 
-  .hero__image {
-    min-width: 320px;
-    height: 500px;
-  }
-
-  .hero__image--moved {
-    top: 240px;
+    img {
+      min-width: 320px;
+      height: 500px;
+    }
   }
 }

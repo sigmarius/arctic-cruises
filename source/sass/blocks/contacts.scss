@@ -1,9 +1,7 @@
-.contacts {
-  > div {
-    padding-top: 120px;
-    display: flex;
-    justify-content: space-between;
-  }
+.contacts__wrapper {
+  padding-top: 120px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .contacts__block {
@@ -64,10 +62,8 @@
 }
 
 @media (max-width: $tablet) {
-  .contacts {
-    > div {
-      padding: 100px 45px 0;
-    }
+  .contacts__wrapper {
+    padding: 100px 45px 0;
   }
 
   .contacts__block {
@@ -97,11 +93,9 @@
 }
 
 @media (max-width: $mobile) {
-  .contacts {
-    > div {
-      flex-direction: column;
-      padding: 59px 17px 0;
-    }
+  .contacts__wrapper {
+    flex-direction: column;
+    padding: 59px 17px 0;
   }
 
   .contacts__block {

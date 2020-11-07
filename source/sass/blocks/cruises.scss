@@ -1,9 +1,9 @@
 .cruises {
   margin-bottom: 83px;
+}
 
-  > div {
-    padding: 110px 15px 0;
-  }
+.cruises__wrapper {
+  padding: 110px 15px 0;
 
   h2 {
     @include clear-content(49px);
@@ -13,7 +13,6 @@
     color: $text-color;
   }
 }
-
 
 .cruises__list {
   @include clear-list;
@@ -29,24 +28,13 @@
   margin-bottom: 29px;
   cursor: pointer;
 
-  &:hover,
-  &--active {
+  &:hover {
     .cruises__item-front {
       display: none;
     }
 
     .cruises__item-back {
       display: flex;
-    }
-  }
-
-  &--active:hover {
-    .cruises__item-front {
-      display: block;
-    }
-
-    .cruises__item-back {
-      display: none;
     }
   }
 }
@@ -115,10 +103,10 @@
 @media (max-width: $tablet) {
   .cruises {
     margin-bottom: 83px;
+  }
 
-    > div {
-      padding: 90px 60px 0;
-    }
+  .cruises__wrapper {
+    padding: 90px 60px 0;
 
     h2 {
       @include font(26px, 39px);
@@ -159,10 +147,10 @@
 @media (max-width: $mobile) {
   .cruises {
     margin-bottom: 31px;
+  }
 
-    > div {
-      padding: 55px 25px 0;
-    }
+  .cruises__wrapper {
+    padding: 55px 25px 0;
 
     h2 {
       @include font(24px, 36px);

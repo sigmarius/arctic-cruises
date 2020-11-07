@@ -8,10 +8,10 @@
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/feature-bg-desktop@2x.jpg");
   }
+}
 
-  > div {
-    padding: 110px 0 0 0;
-  }
+.feature__wrapper {
+  padding: 110px 0 0 0;
 
   h2 {
     @include clear-content(50px);
@@ -96,15 +96,16 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/feature-bg-tablet@2x.jpg");
     }
+  }
 
-    > div {
-      padding: 87px 42px 0;
-    }
+  .feature__wrapper {
+    padding: 87px 42px 0;
 
     h2 {
       @include font(26px, 39px);
     }
   }
+
 
   .feature__item {
     padding: 74px 20px 20px 22px;
@@ -150,10 +151,10 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/feature-bg-mobile@2x.jpg");
     }
+  }
 
-    > div {
-      padding: 57px 15px 0;
-    }
+  .feature__wrapper {
+    padding: 57px 15px 0;
 
     h2 {
       @include font(24px, 36px);

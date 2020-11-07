@@ -1,15 +1,20 @@
 .promo {
   margin-bottom: 116px;
+}
 
-  > div {
-    display: flex;
-    justify-content: space-between;
+.promo__wrapper {
+  display: flex;
+  justify-content: space-between;
 
-    div {
-      width: 50%;
-      padding: 56px 45px 0 0;
-    }
+  img {
+    width: 560px;
+    height: 301px;
   }
+}
+
+.promo__text {
+  width: 50%;
+  padding: 56px 45px 0 0;
 
   h2 {
     @include clear-content(24px);
@@ -23,20 +28,21 @@
     @include font(16px, 24px);
     color: $text-color;
   }
-
-  img {
-    width: 560px;
-    height: 301px;
-  }
 }
 
 @media (max-width: $tablet) {
   .promo {
     margin-bottom: 94px;
 
-    > div div {
-      padding: 0 15px 0 45px;
+    img {
+      width: 324px;
+      height: 264px;
+      margin: 9px 45px 0 0;
     }
+  }
+
+  .promo__text {
+    padding: 0 15px 0 45px;
 
     h2 {
       @include font(26px, 36px);
@@ -47,38 +53,32 @@
     p {
       @include font(16px, 24px);
     }
-
-    img {
-      width: 324px;
-      height: 264px;
-      margin: 9px 45px 0 0;
-    }
   }
 }
 
 @media (max-width: $mobile) {
   .promo {
     margin-bottom: 61px;
+  }
 
-    > div {
-      flex-direction: column;
-      align-items: center;
-
-      div {
-        width: 100%;
-        margin-bottom: 32px;
-        padding: 0 15px;
-      }
-    }
-
-    h2 {
-      @include font(24px, 34px);
-    }
+  .promo__wrapper {
+    flex-direction: column;
+    align-items: center;
 
     img {
       width: 290px;
       height: 186px;
       margin: 0;
+    }
+  }
+
+  .promo__text {
+    width: 100%;
+    margin-bottom: 32px;
+    padding: 0 15px;
+
+    h2 {
+      @include font(24px, 34px);
     }
   }
 }

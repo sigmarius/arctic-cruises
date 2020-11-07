@@ -45,31 +45,41 @@
     </header>
     <main class="main">
       <section class="hero">
-        <div class="wrapper">
+        <div class="hero__wrapper wrapper">
           <h1>Круизы в&nbsp;Антарктику</h1>
           <p>Волшебный мир айсбергов и пингвинов</p>
         </div>
         <picture>
+          <!-- 1x: 320px; 2x: 640px -->
           <source media="(max-width: 767px)" srcset="img/hero-mobile@1x.webp 1x, img/hero-mobile@2x.webp 2x" type="image/webp">
+          <!-- 1x: 768px; 2x: 1276px -->
           <source media="(max-width: 1023px)" srcset="img/hero-tablet@1x.webp 1x, img/hero-tablet@2x.webp 2x" type="image/webp">
+          <!-- 1x: 1366px; 2x: 2732px -->
           <source media="(min-width: 1024px)" srcset="img/hero-desktop@1x.webp 1x, img/hero-desktop@2x.webp 2x" type="image/webp">
+          <!-- 1x: 320px; 2x: 640px -->
           <source media="(max-width: 767px)" srcset="img/hero-mobile@1x.jpg 1x, img/hero-mobile@2x.jpg 2x">
+          <!-- 1x: 768px; 2x: 1276px -->
           <source media="(max-width: 1023px)" srcset="img/hero-tablet@1x.jpg 1x, img/hero-tablet@2x.jpg 2x">
           <!-- 1x: 1366px; 2x: 2732px -->
           <img src="img/hero-desktop@1x.jpg" srcset="img/hero-desktop@2x.jpg 2x" width="1366" height="650" alt="Невероятно красивый арктический пейзаж">
         </picture>
       </section>
       <section class="promo">
-        <div class="wrapper">
-          <div>
+        <div class="promo__wrapper wrapper">
+          <div class="promo__text">
             <h2>Путешествие на&nbsp;край Земли</h2>
             <p>Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром Антарктики. Наш круизный лайнер отвезет вас на&nbsp;край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</p>
           </div>
           <picture>
+            <!-- 1x: 290px; 2x: 580px -->
             <source media="(max-width: 767px)" srcset="img/promo-mobile@1x.webp 1x, img/promo-mobile@2x.webp 2x" type="image/webp">
+            <!-- 1x: 324px; 2x: 648px -->
             <source media="(max-width: 1023px)" srcset="img/promo-tablet@1x.webp 1x, img/promo-tablet@2x.webp 2x" type="image/webp">
+            <!-- 1x: 560px; 2x: 1120px -->
             <source media="(min-width: 1024px)" srcset="img/promo-desktop@1x.webp 1x, img/promo-desktop@2x.webp 2x" type="image/webp">
+            <!-- 1x: 290px; 2x: 580px -->
             <source media="(max-width: 767px)" srcset="img/promo-mobile@1x.jpg 1x, img/promo-mobile@2x.jpg 2x">
+            <!-- 1x: 324px; 2x: 648px -->
             <source media="(max-width: 1023px)" srcset="img/promo-tablet@1x.jpg 1x, img/promo-tablet@2x.jpg 2x">
             <!-- 1x: 560px; 2x: 1120px -->
             <img src="img/promo-desktop@1x.jpg" srcset="img/promo-desktop@2x.jpg 2x" width="560" height="301" alt="Счастливые арктические пингвины">
@@ -77,7 +87,7 @@
         </div>
       </section>
       <section class="feature">
-        <div class="wrapper">
+        <div class="feature__wrapper wrapper">
           <h2>Преимущества</h2>
           <ul class="feature__list">
             <li class="feature__item feature__item--ship">
@@ -98,7 +108,7 @@
         </div>
       </section>
       <section class="cruises">
-        <div class="wrapper">
+        <div class="cruises__wrapper wrapper">
           <h2>Ближайшие круизы</h2>
           <ul class="cruises__list">
             <li class="cruises__item">
@@ -106,10 +116,15 @@
                 <figure>
                   <figcaption>Круиз “Астория”</figcaption>
                   <picture>
+                    <!-- 1x: 270px; 2x: 540px -->
                     <source media="(max-width: 767px)" srcset="img/astoria-mobile@1x.webp 1x, img/astoria-mobile@2x.webp 2x" type="image/webp">
+                    <!-- 1x: 309px; 2x: 618px -->
                     <source media="(max-width: 1023px)" srcset="img/astoria-tablet@1x.webp 1x, img/astoria-tablet@2x.webp 2x" type="image/webp">
+                    <!-- 1x: 260px; 2x: 520px -->
                     <source media="(min-width: 1024px)" srcset="img/astoria-desktop@1x.webp 1x, img/astoria-desktop@2x.webp 2x" type="image/webp">
+                    <!-- 1x: 270px; 2x: 540px -->
                     <source media="(max-width: 767px)" srcset="img/astoria-mobile@1x.jpg 1x, img/astoria-mobile@2x.jpg 2x">
+                    <!-- 1x: 309px; 2x: 618px -->
                     <source media="(max-width: 1023px)" srcset="img/astoria-tablet@1x.jpg 1x, img/astoria-tablet@2x.jpg 2x">
                     <!-- 1x: 260px; 2x: 520px -->
                     <img src="img/astoria-desktop@1x.jpg" srcset="img/astoria-desktop@2x.jpg 2x" width="260" height="386" alt="Круиз Астория">
@@ -131,15 +146,20 @@
                 <a class="cruises__button button" href="#">Забронировать</a>
               </div>
             </li>
-            <li class="cruises__item cruises__item--active">
+            <li class="cruises__item">
               <div class="cruises__item-front">
                 <figure>
                   <figcaption>Круиз “Элайн”</figcaption>
                   <picture>
+                    <!-- 1x: 260px; 2x: 540px -->
                     <source media="(max-width: 767px)" srcset="img/astoria-mobile@1x.webp 1x, img/astoria-mobile@2x.webp 2x" type="image/webp">
+                    <!-- 1x: 309px; 2x: 618px -->
                     <source media="(max-width: 1023px)" srcset="img/astoria-tablet@1x.webp 1x, img/astoria-tablet@2x.webp 2x" type="image/webp">
+                    <!-- 1x: 260px; 2x: 520px -->
                     <source media="(min-width: 1024px)" srcset="img/astoria-desktop@1x.webp 1x, img/astoria-desktop@2x.webp 2x" type="image/webp">
+                    <!-- 1x: 270px; 2x: 540px -->
                     <source media="(max-width: 767px)" srcset="img/astoria-mobile@1x.jpg 1x, img/astoria-mobile@2x.jpg 2x">
+                    <!-- 1x: 309px; 2x: 618px -->
                     <source media="(max-width: 1023px)" srcset="img/astoria-tablet@1x.jpg 1x, img/astoria-tablet@2x.jpg 2x">
                     <!-- 1x: 260px; 2x: 520px -->
                     <img src="img/astoria-desktop@1x.jpg" srcset="img/astoria-desktop@2x.jpg 2x" width="260" height="386" alt="Круиз Элайн">
@@ -166,10 +186,15 @@
                 <figure>
                   <figcaption>Круиз “Атлантис”</figcaption>
                   <picture>
+                    <!-- 1x: 270px; 2x: 540px -->
                     <source media="(max-width: 767px)" srcset="img/atlantis-mobile@1x.webp 1x, img/atlantis-mobile@2x.webp 2x" type="image/webp">
+                    <!-- 1x: 309px; 2x: 618px -->
                     <source media="(max-width: 1023px)" srcset="img/atlantis-tablet@1x.webp 1x, img/atlantis-tablet@2x.webp 2x" type="image/webp">
+                    <!-- 1x: 260px; 2x: 520px -->
                     <source media="(min-width: 1024px)" srcset="img/atlantis-desktop@1x.webp 1x, img/atlantis-desktop@2x.webp 2x" type="image/webp">
+                    <!-- 1x: 270px; 2x: 540px -->
                     <source media="(max-width: 767px)" srcset="img/atlantis-mobile@1x.jpg 1x, img/atlantis-mobile@2x.jpg 2x">
+                    <!-- 1x: 309px; 2x: 618px -->
                     <source media="(max-width: 1023px)" srcset="img/atlantis-tablet@1x.jpg 1x, img/atlantis-tablet@2x.jpg 2x">
                     <!-- 1x: 260px; 2x: 520px -->
                     <img src="img/atlantis-desktop@1x.jpg" srcset="img/atlantis-desktop@2x.jpg 2x" width="260" height="386" alt="Круиз Атлантис">
@@ -196,10 +221,15 @@
                 <figure>
                   <figcaption>Круиз “Одиссей”</figcaption>
                   <picture>
+                    <!-- 1x: 270px; 2x: 540px -->
                     <source media="(max-width: 767px)" srcset="img/odissey-mobile@1x.webp 1x, img/odissey-mobile@2x.webp 2x" type="image/webp">
+                    <!-- 1x: 309px; 2x: 618px -->
                     <source media="(max-width: 1023px)" srcset="img/odissey-tablet@1x.webp 1x, img/odissey-tablet@2x.webp 2x" type="image/webp">
+                    <!-- 1x: 260px; 2x: 520px -->
                     <source media="(min-width: 1024px)" srcset="img/odissey-desktop@1x.webp 1x, img/odissey-desktop@2x.webp 2x" type="image/webp">
+                    <!-- 1x: 270px; 2x: 540px -->
                     <source media="(max-width: 767px)" srcset="img/odissey-mobile@1x.jpg 1x, img/odissey-mobile@2x.jpg 2x">
+                    <!-- 1x: 309px; 2x: 618px -->
                     <source media="(max-width: 1023px)" srcset="img/odissey-tablet@1x.jpg 1x, img/odissey-tablet@2x.jpg 2x">
                     <!-- 1x: 260px; 2x: 520px -->
                     <img src="img/odissey-desktop@1x.jpg" srcset="img/odissey-desktop@2x.jpg 2x" width="260" height="386" alt="Круиз Одиссей">
@@ -226,10 +256,15 @@
                 <figure>
                   <figcaption>Круиз “Олимпия”</figcaption>
                   <picture>
+                    <!-- 1x: 270px; 2x: 540px -->
                     <source media="(max-width: 767px)" srcset="img/olimpia-mobile@1x.webp 1x, img/olimpia-mobile@2x.webp 2x" type="image/webp">
+                    <!-- 1x: 309px; 2x: 618px -->
                     <source media="(max-width: 1023px)" srcset="img/olimpia-tablet@1x.webp 1x, img/olimpia-tablet@2x.webp 2x" type="image/webp">
+                    <!-- 1x: 260px; 2x: 520px -->
                     <source media="(min-width: 1024px)" srcset="img/olimpia-desktop@1x.webp 1x, img/olimpia-desktop@2x.webp 2x" type="image/webp">
+                    <!-- 1x: 270px; 2x: 540px -->
                     <source media="(max-width: 767px)" srcset="img/olimpia-mobile@1x.jpg 1x, img/olimpia-mobile@2x.jpg 2x">
+                    <!-- 1x: 309px; 2x: 618px -->
                     <source media="(max-width: 1023px)" srcset="img/olimpia-tablet@1x.jpg 1x, img/olimpia-tablet@2x.jpg 2x">
                     <!-- 1x: 260px; 2x: 520px -->
                     <img src="img/olimpia-desktop@1x.jpg" srcset="img/olimpia-desktop@2x.jpg 2x" width="260" height="386" alt="Круиз Олимпия">
@@ -256,10 +291,15 @@
                 <figure>
                   <figcaption>Круиз “Аврора”</figcaption>
                   <picture>
+                    <!-- 1x: 270px; 2x: 540px -->
                     <source media="(max-width: 767px)" srcset="img/avrora-mobile@1x.webp 1x, img/avrora-mobile@2x.webp 2x" type="image/webp">
+                    <!-- 1x: 309px; 2x: 618px -->
                     <source media="(max-width: 1023px)" srcset="img/avrora-tablet@1x.webp 1x, img/avrora-tablet@2x.webp 2x" type="image/webp">
+                    <!-- 1x: 260px; 2x: 520px -->
                     <source media="(min-width: 1024px)" srcset="img/avrora-desktop@1x.webp 1x, img/avrora-desktop@2x.webp 2x" type="image/webp">
+                    <!-- 1x: 270px; 2x: 540px -->
                     <source media="(max-width: 767px)" srcset="img/avrora-mobile@1x.jpg 1x, img/avrora-mobile@2x.jpg 2x">
+                    <!-- 1x: 309px; 2x: 618px -->
                     <source media="(max-width: 1023px)" srcset="img/avrora-tablet@1x.jpg 1x, img/avrora-tablet@2x.jpg 2x">
                     <!-- 1x: 260px; 2x: 520px -->
                     <img src="img/avrora-desktop@1x.jpg" srcset="img/avrora-desktop@2x.jpg 2x" width="260" height="386" alt="Круиз Аврора">
@@ -286,10 +326,15 @@
                 <figure>
                   <figcaption>Круиз “Леонор”</figcaption>
                   <picture>
+                    <!-- 1x: 270px; 2x: 540px -->
                     <source media="(max-width: 767px)" srcset="img/leonor-mobile@1x.webp 1x, img/leonor-mobile@2x.webp 2x" type="image/webp">
+                    <!-- 1x: 309px; 2x: 618px -->
                     <source media="(max-width: 1023px)" srcset="img/leonor-tablet@1x.webp 1x, img/leonor-tablet@2x.webp 2x" type="image/webp">
+                    <!-- 1x: 260px; 2x: 520px -->
                     <source media="(min-width: 1024px)" srcset="img/leonor-desktop@1x.webp 1x, img/leonor-desktop@2x.webp 2x" type="image/webp">
+                    <!-- 1x: 270px; 2x: 540px -->
                     <source media="(max-width: 767px)" srcset="img/leonor-mobile@1x.jpg 1x, img/leonor-mobile@2x.jpg 2x">
+                    <!-- 1x: 309px; 2x: 618px -->
                     <source media="(max-width: 1023px)" srcset="img/leonor-tablet@1x.jpg 1x, img/leonor-tablet@2x.jpg 2x">
                     <!-- 1x: 260px; 2x: 520px -->
                     <img src="img/leonor-desktop@1x.jpg" srcset="img/leonor-desktop@2x.jpg 2x" width="260" height="386" alt="Круиз Леонор">
@@ -316,10 +361,15 @@
                 <figure>
                   <figcaption>Круиз “Минион - 1”</figcaption>
                   <picture>
+                    <!-- 1x: 270px; 2x: 540px -->
                     <source media="(max-width: 767px)" srcset="img/minion-mobile@1x.webp 1x, img/minion-mobile@2x.webp 2x" type="image/webp">
+                    <!-- 1x: 309px; 2x: 618px -->
                     <source media="(max-width: 1023px)" srcset="img/minion-tablet@1x.webp 1x, img/minion-tablet@2x.webp 2x" type="image/webp">
+                    <!-- 1x: 260px; 2x: 520px -->
                     <source media="(min-width: 1024px)" srcset="img/minion-desktop@1x.webp 1x, img/minion-desktop@2x.webp 2x" type="image/webp">
+                    <!-- 1x: 270px; 2x: 540px -->
                     <source media="(max-width: 767px)" srcset="img/minion-mobile@1x.jpg 1x, img/minion-mobile@2x.jpg 2x">
+                    <!-- 1x: 309px; 2x: 618px -->
                     <source media="(max-width: 1023px)" srcset="img/minion-tablet@1x.jpg 1x, img/minion-tablet@2x.jpg 2x">
                     <!-- 1x: 260px; 2x: 520px -->
                     <img src="img/minion-desktop@1x.jpg" srcset="img/minion-desktop@2x.jpg 2x" width="260" height="386" alt="Круиз Минион - 1">
@@ -345,8 +395,8 @@
         </div>
       </section>
       <section class="feedback">
-        <div class="wrapper">
-          <div>
+        <div class="feedback__wrapper wrapper">
+          <div class="feedback__text">
             <h2>Раннее бронирование</h2>
             <p>Забронируйте тур за&nbsp;3-6&nbsp;месяцев до&nbsp;даты выезда и&nbsp;сэкономьте до 50%</p>
           </div>
@@ -365,18 +415,23 @@
         </div>
       </section>
       <section class="contacts">
-        <div class="wrapper">
+        <div class="contacts__wrapper wrapper">
           <h2 class="visually-hidden">Контакты и схема проезда</h2>
           <div class="contacts__block contacts__block--map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003174!2d30.320858716192735!3d59.93871916905406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1604605681696!5m2!1sru!2sru" width="560" height="306" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             <picture>
+              <!-- 1x: 290px; 2x: 580px -->
               <source media="(max-width: 767px)" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x" type="image/webp">
+              <!-- 1x: 324px; 2x: 648px -->
               <source media="(max-width: 1023px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x" type="image/webp">
-              <source media="(min-width: 1024px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x" type="image/webp">
-              <source media="(max-width: 767px)" srcset="img/map-mobile@1x.jpg 1x, img/map-mobile@2x.jpg 2x">
-              <source media="(max-width: 1023px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
               <!-- 1x: 560px; 2x: 1120px -->
-              <img src="img/map-desktop@1x.jpg" srcset="img/map-desktop@2x.jpg 2x" width="560" height="306" alt="Наш офис на карте - г. Санкт Петербург, ул. Большая Конюшенная, 19/8">
+              <source media="(min-width: 1024px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x" type="image/webp">
+              <!-- 1x: 290px; 2x: 580px -->
+              <source media="(max-width: 767px)" srcset="img/map-mobile@1x.png 1x, img/map-mobile@2x.png 2x">
+              <!-- 1x: 324px; 2x: 648px -->
+              <source media="(max-width: 1023px)" srcset="img/map-tablet@1x.png 1x, img/map-tablet@2x.png 2x">
+              <!-- 1x: 560px; 2x: 1120px -->
+              <img src="img/map-desktop@1x.png" srcset="img/map-desktop@2x.png 2x" width="560" height="306" alt="Наш офис на карте - г. Санкт Петербург, ул. Большая Конюшенная, 19/8">
             </picture>
           </div>
           <div class="contacts__block contacts__block--text">

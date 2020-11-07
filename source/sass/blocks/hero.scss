@@ -1,9 +1,18 @@
 .hero {
   min-height: 658px;
 
-  > div {
-    padding: 158px 95px 0;
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 650px;
+    width: 100%;
   }
+}
+
+.hero__wrapper {
+  padding: 158px 95px 0;
 
   h1 {
     @include clear-content(12px);
@@ -20,24 +29,19 @@
     font-weight: 400;
     color: $text-white;
   }
-
-  img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    height: 650px;
-    width: 100%;
-  }
 }
 
 @media (max-width: $tablet) {
   .hero {
     min-height: 675px;
 
-    > div {
-      padding: 214px 46px 0;
+    img {
+      height: 638px;
     }
+  }
+
+  .hero__wrapper {
+    padding: 214px 46px 0;
 
     h1 {
       @include font(50px, 61px);
@@ -46,10 +50,6 @@
     p {
       @include font(18px, 22px);
     }
-
-    img {
-      height: 638px;
-    }
   }
 }
 
@@ -57,9 +57,14 @@
   .hero {
     min-height: 460px;
 
-    > div {
-      padding: 79px 18px 0;
+    img {
+      min-width: 320px;
+      height: 500px;
     }
+  }
+
+  .hero__wrapper {
+    padding: 79px 18px 0;
 
     h1 {
       @include font(36px, 45px);
@@ -68,11 +73,6 @@
     p {
       @include font(16px, 22px);
       padding-right: 53px;
-    }
-
-    img {
-      min-width: 320px;
-      height: 500px;
     }
   }
 }

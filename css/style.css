@@ -609,144 +609,133 @@ a {
 
 .hero {
   min-height: 658px; }
-
-.hero__wrapper {
-  padding: 158px 95px 0; }
-
-.hero__title {
-  margin: 0;
-  margin-bottom: 12px;
-  padding: 0;
-  font-size: 54px;
-  line-height: 66px;
-  font-weight: 700;
-  color: #f9fbfd; }
-
-.hero__text {
-  font-size: 20px;
-  line-height: 24px;
-  margin: 0;
-  margin-bottom: 0;
-  padding: 0;
-  font-weight: 400;
-  color: #f9fbfd; }
-
-.hero__image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  height: 650px;
-  width: 100%; }
+  .hero > div {
+    padding: 158px 95px 0; }
+  .hero h1 {
+    margin: 0;
+    margin-bottom: 12px;
+    padding: 0;
+    font-size: 54px;
+    line-height: 66px;
+    font-weight: 700;
+    color: #f9fbfd; }
+  .hero p {
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0;
+    margin-bottom: 0;
+    padding: 0;
+    font-weight: 400;
+    color: #f9fbfd; }
+  .hero img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 650px;
+    width: 100%; }
 
 @media (max-width: 1023px) {
   .hero {
     min-height: 675px; }
-  .hero__wrapper {
-    padding: 214px 46px 0; }
-  .hero__title {
-    font-size: 50px;
-    line-height: 61px; }
-  .hero__text {
-    font-size: 18px;
-    line-height: 22px; }
-  .hero__image {
-    height: 638px; } }
+    .hero > div {
+      padding: 214px 46px 0; }
+    .hero h1 {
+      font-size: 50px;
+      line-height: 61px; }
+    .hero p {
+      font-size: 18px;
+      line-height: 22px; }
+    .hero img {
+      height: 638px; } }
 
 @media (max-width: 767px) {
   .hero {
     min-height: 460px; }
-  .hero__wrapper {
-    padding: 79px 18px 0; }
-  .hero__title {
-    font-size: 36px;
-    line-height: 45px; }
-  .hero__text {
-    font-size: 16px;
-    line-height: 22px;
-    padding-right: 53px; }
-  .hero__image {
-    min-width: 320px;
-    height: 500px; }
-  .hero__image--moved {
-    top: 240px; } }
+    .hero > div {
+      padding: 79px 18px 0; }
+    .hero h1 {
+      font-size: 36px;
+      line-height: 45px; }
+    .hero p {
+      font-size: 16px;
+      line-height: 22px;
+      padding-right: 53px; }
+    .hero img {
+      min-width: 320px;
+      height: 500px; } }
 
 .promo {
   margin-bottom: 116px; }
-
-.promo__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-
-.promo__text {
-  width: 50%;
-  padding: 56px 45px 0 0; }
-
-.promo__title {
-  margin: 0;
-  margin-bottom: 24px;
-  padding: 0;
-  font-size: 28px;
-  line-height: 42px;
-  font-weight: 600;
-  color: #011c40; }
-
-.promo__lead {
-  margin: 0;
-  margin-bottom: 0;
-  padding: 0;
-  font-size: 16px;
-  line-height: 24px;
-  color: #011c40; }
-
-.promo__image {
-  width: 560px;
-  height: 301px; }
+  .promo > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .promo > div div {
+      width: 50%;
+      padding: 56px 45px 0 0; }
+  .promo h2 {
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 0;
+    font-size: 28px;
+    line-height: 42px;
+    font-weight: 600;
+    color: #011c40; }
+  .promo p {
+    margin: 0;
+    margin-bottom: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 24px;
+    color: #011c40; }
+  .promo img {
+    width: 560px;
+    height: 301px; }
 
 @media (max-width: 1023px) {
   .promo {
     margin-bottom: 94px; }
-  .promo__text {
-    padding: 0 15px 0 45px; }
-  .promo__title {
-    font-size: 26px;
-    line-height: 36px;
-    margin-bottom: 15px;
-    padding-right: 25px; }
-  .promo__lead {
-    font-size: 16px;
-    line-height: 24px; }
-  .promo__image {
-    width: 324px;
-    height: 264px;
-    margin: 9px 45px 0 0; } }
+    .promo > div div {
+      padding: 0 15px 0 45px; }
+    .promo h2 {
+      font-size: 26px;
+      line-height: 36px;
+      margin-bottom: 15px;
+      padding-right: 25px; }
+    .promo p {
+      font-size: 16px;
+      line-height: 24px; }
+    .promo img {
+      width: 324px;
+      height: 264px;
+      margin: 9px 45px 0 0; } }
 
 @media (max-width: 767px) {
   .promo {
     margin-bottom: 61px; }
-  .promo__wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-  .promo__text {
-    width: 100%;
-    margin-bottom: 32px;
-    padding: 0 15px; }
-  .promo__title {
-    font-size: 24px;
-    line-height: 34px; }
-  .promo__image {
-    width: 290px;
-    height: 186px;
-    margin: 0; } }
+    .promo > div {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .promo > div div {
+        width: 100%;
+        margin-bottom: 32px;
+        padding: 0 15px; }
+    .promo h2 {
+      font-size: 24px;
+      line-height: 34px; }
+    .promo img {
+      width: 290px;
+      height: 186px;
+      margin: 0; } }
 
 .feature {
   width: 100%;
@@ -757,19 +746,17 @@ a {
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .feature {
       background-image: url("../img/feature-bg-desktop@2x.jpg"); } }
-
-.feature__wrapper {
-  padding: 110px 0 0 0; }
-
-.feature__title {
-  margin: 0;
-  margin-bottom: 50px;
-  padding: 0;
-  font-size: 28px;
-  line-height: 42px;
-  font-weight: 600;
-  text-align: center;
-  color: #011c40; }
+  .feature > div {
+    padding: 110px 0 0 0; }
+  .feature h2 {
+    margin: 0;
+    margin-bottom: 50px;
+    padding: 0;
+    font-size: 28px;
+    line-height: 42px;
+    font-weight: 600;
+    text-align: center;
+    color: #011c40; }
 
 .feature__list {
   padding: 0;
@@ -787,7 +774,26 @@ a {
   min-height: 241px;
   padding: 80px 20px 25px 30px;
   background-color: #f9fbfd; }
-  .feature__item--ship .feature__item-title::before {
+  .feature__item h3 {
+    margin: 0;
+    margin-bottom: 8px;
+    padding: 0;
+    font-size: 18px;
+    line-height: 27px;
+    position: relative;
+    font-weight: 500;
+    color: #011c40; }
+    .feature__item h3::before {
+      position: absolute;
+      left: 0; }
+  .feature__item p {
+    margin: 0;
+    margin-bottom: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 20px;
+    color: #011c40; }
+  .feature__item--ship h3::before {
     top: -51px;
     left: -4px;
     width: 27px;
@@ -795,39 +801,18 @@ a {
     content: url("../img/ship.svg"); }
   .feature__item--checked {
     padding-right: 49px; }
-    .feature__item--checked .feature__item-title::before {
+    .feature__item--checked h3::before {
       top: -46px;
       width: 38px;
       height: 21px;
       content: url("../img/checked.svg"); }
-  .feature__item--zodiac .feature__item-text {
-    padding-right: 60px; }
-  .feature__item--zodiac .feature__item-title::before {
+  .feature__item--zodiac h3::before {
     top: -47px;
     width: 42px;
     height: 15px;
     content: url("../img/zodiac.svg"); }
-
-.feature__item-title {
-  margin: 0;
-  margin-bottom: 8px;
-  padding: 0;
-  font-size: 18px;
-  line-height: 27px;
-  position: relative;
-  font-weight: 500;
-  color: #011c40; }
-  .feature__item-title::before {
-    position: absolute;
-    left: 0; }
-
-.feature__item-text {
-  margin: 0;
-  margin-bottom: 0;
-  padding: 0;
-  font-size: 14px;
-  line-height: 20px;
-  color: #011c40; }
+  .feature__item--zodiac p {
+    padding-right: 60px; }
 
 @media (max-width: 1023px) {
   .feature {
@@ -838,28 +823,28 @@ a {
       background-image: url("../img/feature-bg-tablet@2x.jpg"); } }
 
 @media (max-width: 1023px) {
-  .feature__wrapper {
-    padding: 87px 42px 0; }
-  .feature__title {
-    font-size: 26px;
-    line-height: 39px; }
+    .feature > div {
+      padding: 87px 42px 0; }
+    .feature h2 {
+      font-size: 26px;
+      line-height: 39px; }
   .feature__item {
     padding: 74px 20px 20px 22px; }
-    .feature__item--ship .feature__item-title::before {
+    .feature__item h3 {
+      font-size: 18px;
+      line-height: 25px; }
+    .feature__item--ship h3::before {
       width: 21px;
       height: 26px; }
-    .feature__item--checked .feature__item-title::before {
+    .feature__item--checked h3::before {
       width: 33px;
       height: 19px; }
-    .feature__item--zodiac .feature__item-text {
-      padding-right: 3px; }
-    .feature__item--zodiac .feature__item-title::before {
+    .feature__item--zodiac h3::before {
       top: -44px;
       width: 38px;
       height: 13px; }
-  .feature__item-title {
-    font-size: 18px;
-    line-height: 25px; } }
+    .feature__item--zodiac p {
+      padding-right: 3px; } }
 
 @media (max-width: 767px) {
   .feature {
@@ -871,12 +856,12 @@ a {
       background-image: url("../img/feature-bg-mobile@2x.jpg"); } }
 
 @media (max-width: 767px) {
-  .feature__wrapper {
-    padding: 57px 15px 0; }
-  .feature__title {
-    font-size: 24px;
-    line-height: 36px;
-    margin-bottom: 30px; }
+    .feature > div {
+      padding: 57px 15px 0; }
+    .feature h2 {
+      font-size: 24px;
+      line-height: 36px;
+      margin-bottom: 30px; }
   .feature__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -886,38 +871,36 @@ a {
     width: 100%;
     margin-bottom: 30px;
     padding: 71px 20px 20px 20px; }
-    .feature__item--ship .feature__item-title::before {
+    .feature__item h3 {
+      line-height: 25px; }
+    .feature__item--ship h3::before {
       left: -7px; }
-    .feature__item--checked .feature__item-title {
+    .feature__item--checked h3 {
       padding-right: 35px; }
-      .feature__item--checked .feature__item-title::before {
+      .feature__item--checked h3::before {
         left: -2px;
         top: -44px; }
-    .feature__item--zodiac .feature__item-title {
+    .feature__item--zodiac h3 {
       padding-right: 50px; }
-    .feature__item--zodiac .feature__item-text {
-      padding-right: 3px; }
-    .feature__item--zodiac .feature__item-title::before {
-      top: -42px;
-      left: -2px; }
-  .feature__item-title {
-    line-height: 25px; } }
+      .feature__item--zodiac h3::before {
+        top: -42px;
+        left: -2px; }
+    .feature__item--zodiac p {
+      padding-right: 3px; } }
 
 .cruises {
   margin-bottom: 83px; }
-
-.cruises__wrapper {
-  padding: 110px 15px 0; }
-
-.cruises__title {
-  margin: 0;
-  margin-bottom: 49px;
-  padding: 0;
-  font-size: 28px;
-  line-height: 42px;
-  font-weight: 600;
-  text-align: center;
-  color: #011c40; }
+  .cruises > div {
+    padding: 110px 15px 0; }
+  .cruises h2 {
+    margin: 0;
+    margin-bottom: 49px;
+    padding: 0;
+    font-size: 28px;
+    line-height: 42px;
+    font-weight: 600;
+    text-align: center;
+    color: #011c40; }
 
 .cruises__list {
   padding: 0;
@@ -953,14 +936,14 @@ a {
   display: block;
   width: 100%;
   height: 100%; }
-  .cruises__item-front .cruises__image {
+  .cruises__item-front figure {
     margin: 0;
     margin-bottom: 0;
     padding: 0;
     position: relative;
     min-width: 260px;
     height: 386px; }
-    .cruises__item-front .cruises__image figcaption {
+    .cruises__item-front figure figcaption {
       font-size: 18px;
       line-height: 27px;
       position: absolute;
@@ -982,81 +965,79 @@ a {
   height: 100%;
   padding: 70px 25px 35px;
   background-color: #011c40; }
-
-.cruises__name {
-  margin: 0;
-  margin-bottom: 0;
-  padding: 0;
-  font-size: 18px;
-  line-height: 27px;
-  position: absolute;
-  top: 28px;
-  left: 25px;
-  font-weight: 500;
-  color: #f9fbfd; }
-
-.cruises__description {
-  margin: 0;
-  margin-bottom: 0;
-  padding: 0;
-  font-size: 14px;
-  line-height: 20px; }
-  .cruises__description dt {
+  .cruises__item-back h3 {
+    margin: 0;
+    margin-bottom: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 27px;
+    position: absolute;
+    top: 28px;
+    left: 25px;
     font-weight: 500;
     color: #f9fbfd; }
-  .cruises__description dd {
+  .cruises__item-back dl {
     margin: 0;
-    margin-bottom: 12px;
+    margin-bottom: 0;
     padding: 0;
-    color: #d8d8d9; }
-    .cruises__description dd:last-child {
-      margin-bottom: 0; }
+    font-size: 14px;
+    line-height: 20px; }
+    .cruises__item-back dl dt {
+      font-weight: 500;
+      color: #f9fbfd; }
+    .cruises__item-back dl dd {
+      margin: 0;
+      margin-bottom: 12px;
+      padding: 0;
+      color: #d8d8d9; }
+      .cruises__item-back dl dd:last-child {
+        margin-bottom: 0; }
 
 @media (max-width: 1023px) {
   .cruises {
-    margin-bottom: 56px; }
-  .cruises__wrapper {
-    padding: 90px 60px 0; }
-  .cruises__title {
-    font-size: 26px;
-    line-height: 39px; }
+    margin-bottom: 83px; }
+    .cruises > div {
+      padding: 90px 60px 0; }
+    .cruises h2 {
+      font-size: 26px;
+      line-height: 39px; }
   .cruises__item {
     width: 48%;
-    margin-bottom: 27px; }
-  .cruises__item-front .cruises__image {
+    margin-bottom: 31px; }
+  .cruises__item-front figure {
     min-width: 309px; }
-    .cruises__item-front .cruises__image img {
+    .cruises__item-front figure img {
       width: 100%;
       height: 100%; }
-    .cruises__item-front .cruises__image figcaption {
+    .cruises__item-front figure figcaption {
       bottom: 32px;
       left: 34px; }
   .cruises__item-back {
     padding: 70px 35px 35px; }
-  .cruises__name {
-    top: 29px;
-    left: 37px; } }
+    .cruises__item-back h3 {
+      top: 29px;
+      left: 37px; } }
 
 @media (max-width: 767px) {
   .cruises {
     margin-bottom: 31px; }
-  .cruises__wrapper {
-    padding: 55px 25px 0; }
-  .cruises__title {
-    font-size: 24px;
-    line-height: 36px;
-    margin-bottom: 32px; }
+    .cruises > div {
+      padding: 55px 25px 0; }
+    .cruises h2 {
+      font-size: 24px;
+      line-height: 36px;
+      margin-bottom: 32px; }
   .cruises__item {
     width: 100%; }
-  .cruises__item-front .cruises__image {
+  .cruises__item-front figure {
     min-width: 270px; }
-    .cruises__item-front .cruises__image figcaption {
+    .cruises__item-front figure figcaption {
       bottom: 22px;
       left: 25px; }
   .cruises__item-back {
     padding: 69px 25px 35px; }
-  .cruises__name {
-    left: 25px; } }
+    .cruises__item-back h3 {
+      left: 25px; } }
 
 .feedback {
   width: 100%;
@@ -1223,7 +1204,7 @@ a {
           width: 20px;
           height: 20px; } }
 
-.contacts__wrapper {
+.contacts > div {
   padding-top: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1236,6 +1217,29 @@ a {
   width: 50%; }
   .contacts__block--text {
     padding: 75px 0 30px 80px; }
+    .contacts__block--text p {
+      margin: 0;
+      margin-bottom: 33px;
+      padding: 0;
+      font-size: 18px;
+      line-height: 27px;
+      font-weight: 500;
+      color: #011c40; }
+    .contacts__block--text address,
+    .contacts__block--text a {
+      margin: 0;
+      margin-bottom: 22px;
+      padding: 0;
+      font-size: 16px;
+      line-height: 24px;
+      position: relative;
+      padding-left: 30px;
+      font-style: normal;
+      color: #011c40; }
+    .contacts__block--text svg {
+      position: absolute;
+      top: -2px;
+      left: 0; }
   .contacts__block--map {
     position: relative;
     width: 560px;
@@ -1257,37 +1261,8 @@ a {
       height: 100%;
       border: none; }
 
-.contacts__text {
-  width: 43%; }
-
-.contacts__lead {
-  margin: 0;
-  margin-bottom: 33px;
-  padding: 0;
-  font-size: 18px;
-  line-height: 27px;
-  font-weight: 500;
-  color: #011c40; }
-
-.contacts__way {
-  margin: 0;
-  margin-bottom: 22px;
-  padding: 0;
-  font-size: 16px;
-  line-height: 24px;
-  position: relative;
-  padding-left: 30px;
-  color: #011c40; }
-  .contacts__way--address {
-    font-style: normal; }
-
-.contacts__icon {
-  position: absolute;
-  top: -2px;
-  left: 0; }
-
 @media (max-width: 1023px) {
-  .contacts__wrapper {
+  .contacts > div {
     padding: 100px 45px 0; }
   .contacts__block--map {
     width: 324px;
@@ -1298,13 +1273,13 @@ a {
       left: 34%; }
   .contacts__block--text {
     padding: 67px 0 30px 15px; }
-  .contacts__lead {
-    margin-bottom: 25px; }
-  .contacts__way--address svg {
-    top: 5px; } }
+    .contacts__block--text p {
+      margin-bottom: 25px; }
+    .contacts__block--text address svg {
+      top: 5px; } }
 
 @media (max-width: 767px) {
-  .contacts__wrapper {
+  .contacts > div {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;

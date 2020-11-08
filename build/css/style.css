@@ -378,7 +378,16 @@ a {
 
 .wrapper {
   max-width: 1160px;
+  min-width: 1024px;
   margin: 0 auto; }
+  @media (max-width: 1023px) {
+    .wrapper {
+      max-width: 1023px;
+      min-width: 767px; } }
+  @media (max-width: 767px) {
+    .wrapper {
+      max-width: 767px;
+      min-width: 320px; } }
 
 .button {
   font-size: 14px;

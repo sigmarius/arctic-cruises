@@ -58,6 +58,12 @@
       font-weight: 500;
       color: $text-white;
     }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
   }
 }
 
@@ -121,11 +127,7 @@
   .cruises__item-front {
     figure {
       min-width: 309px;
-
-      img {
-        width: 100%;
-        height: 100%;
-      }
+      height: auto;
 
       figcaption {
         bottom: 32px;

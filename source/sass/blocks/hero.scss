@@ -55,7 +55,7 @@
 
 @media (max-width: $mobile) {
   .hero {
-    min-height: 460px;
+    min-height: auto;
 
     img {
       min-width: 320px;
@@ -64,7 +64,7 @@
   }
 
   .hero__wrapper {
-    padding: 79px 18px 0;
+    padding: 41px 18px 45px;
 
     h1 {
       @include font(36px, 45px);

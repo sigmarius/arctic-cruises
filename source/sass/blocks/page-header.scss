@@ -106,6 +106,7 @@
 
 @media (max-width: $mobile) {
   .page-header {
+    min-height: 98px;
     background-color: transparent;
 
     &--footer {
@@ -210,7 +211,9 @@
 
   .page-header--opened {
     .page-header__wrapper {
+      position: absolute;
       min-height: 300px;
+      min-width: 100%;
       background-color: $text-white;
     }
   }
@@ -219,17 +222,23 @@
     .page-header__logo {
       fill: $text-white;
     }
+
+    .page-header__menu {
+      display: none;
+    }
   }
 
-  .page-header--closed .page-header__menu {
-    display: none;
-  }
+  .page-header--nojs {
+    .page-header__wrapper {
+      position: static;
+    }
 
-  .page-header--nojs .page-header__toggle {
-    display: none;
-  }
+    .page-header__toggle {
+      display: none;
+    }
 
-  .page-header--nojs .page-header__link {
-    display: block;
+    .page-header__link {
+      display: block;
+    }
   }
 }

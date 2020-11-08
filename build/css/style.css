@@ -949,18 +949,18 @@ a {
     position: relative;
     min-width: 260px;
     height: 386px; }
-    .cruises__item-front figure figcaption {
-      font-size: 18px;
-      line-height: 27px;
-      position: absolute;
-      bottom: 27px;
-      left: 30px;
-      font-weight: 500;
-      color: #f9fbfd; }
-    .cruises__item-front figure img {
-      display: block;
-      width: 100%;
-      height: 100%; }
+  .cruises__item-front figcaption {
+    font-size: 18px;
+    line-height: 27px;
+    position: absolute;
+    bottom: 27px;
+    left: 30px;
+    font-weight: 500;
+    color: #f9fbfd; }
+  .cruises__item-front img {
+    display: block;
+    width: 100%;
+    height: 100%; }
 
 .cruises__item-back {
   display: none;
@@ -992,16 +992,16 @@ a {
     padding: 0;
     font-size: 14px;
     line-height: 20px; }
-    .cruises__item-back dl dt {
-      font-weight: 500;
-      color: #f9fbfd; }
-    .cruises__item-back dl dd {
-      margin: 0;
-      margin-bottom: 12px;
-      padding: 0;
-      color: #d8d8d9; }
-      .cruises__item-back dl dd:last-child {
-        margin-bottom: 0; }
+  .cruises__item-back dt {
+    font-weight: 500;
+    color: #f9fbfd; }
+  .cruises__item-back dd {
+    margin: 0;
+    margin-bottom: 12px;
+    padding: 0;
+    color: #d8d8d9; }
+    .cruises__item-back dd:last-child {
+      margin-bottom: 0; }
 
 @media (max-width: 1023px) {
   .cruises {
@@ -1017,9 +1017,9 @@ a {
   .cruises__item-front figure {
     min-width: 309px;
     height: auto; }
-    .cruises__item-front figure figcaption {
-      bottom: 32px;
-      left: 34px; }
+  .cruises__item-front figcaption {
+    bottom: 32px;
+    left: 34px; }
   .cruises__item-back {
     padding: 70px 35px 35px; }
     .cruises__item-back h3 {
@@ -1039,9 +1039,9 @@ a {
     width: 100%; }
   .cruises__item-front figure {
     min-width: 270px; }
-    .cruises__item-front figure figcaption {
-      bottom: 22px;
-      left: 25px; }
+  .cruises__item-front figcaption {
+    bottom: 22px;
+    left: 25px; }
   .cruises__item-back {
     padding: 69px 25px 35px; }
     .cruises__item-back h3 {
@@ -1286,8 +1286,8 @@ form {
     padding: 67px 0 30px 15px; }
     .contacts__block--text p {
       margin-bottom: 25px; }
-    .contacts__block--text address svg {
-      top: 5px; } }
+  .contacts__address svg {
+    top: 5px; } }
 
 @media (max-width: 767px) {
   .contacts__wrapper {

@@ -49,21 +49,21 @@
     position: relative;
     min-width: 260px;
     height: 386px;
+  }
 
-    figcaption {
-      @include font(18px, 27px);
-      position: absolute;
-      bottom: 27px;
-      left: 30px;
-      font-weight: 500;
-      color: $text-white;
-    }
+  figcaption {
+    @include font(18px, 27px);
+    position: absolute;
+    bottom: 27px;
+    left: 30px;
+    font-weight: 500;
+    color: $text-white;
+  }
 
-    img {
-      display: block;
-      width: 100%;
-      height: 100%;
-    }
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -89,19 +89,19 @@
   dl {
     @include clear-content(0);
     @include font(14px, 20px);
+  }
 
-    dt {
-      font-weight: 500;
-      color: $text-white;
-    }
+  dt {
+    font-weight: 500;
+    color: $text-white;
+  }
 
-    dd {
-      @include clear-content(12px);
-      color: $text-grey;
+  dd {
+    @include clear-content(12px);
+    color: $text-grey;
 
-      &:last-child {
-        margin-bottom: 0;
-      }
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 }
@@ -128,11 +128,11 @@
     figure {
       min-width: 309px;
       height: auto;
+    }
 
-      figcaption {
-        bottom: 32px;
-        left: 34px;
-      }
+    figcaption {
+      bottom: 32px;
+      left: 34px;
     }
   }
 
@@ -167,11 +167,11 @@
   .cruises__item-front {
     figure {
       min-width: 270px;
+    }
 
-      figcaption {
-        bottom: 22px;
-        left: 25px;
-      }
+    figcaption {
+      bottom: 22px;
+      left: 25px;
     }
   }
 

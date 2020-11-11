@@ -30,11 +30,13 @@
 
   &:hover {
     .cruises__item-front {
-      display: none;
+      visibility: hidden;
     }
 
     .cruises__item-back {
-      display: flex;
+      position: absolute;
+      top: 0;
+      visibility: visible;
     }
   }
 }
@@ -48,7 +50,7 @@
     @include clear-content(0);
     position: relative;
     min-width: 260px;
-    height: 386px;
+    height: 100%;
   }
 
   figcaption {
@@ -68,13 +70,16 @@
 }
 
 .cruises__item-back {
-  display: none;
+  position: absolute;
+  top: 0;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
   height: 100%;
   padding: 70px 25px 35px;
   background-color: $text-color;
+  visibility: hidden;
 
   h3 {
     @include clear-content(0);
@@ -127,7 +132,7 @@
   .cruises__item-front {
     figure {
       min-width: 309px;
-      height: auto;
+      height: 100%;
     }
 
     figcaption {

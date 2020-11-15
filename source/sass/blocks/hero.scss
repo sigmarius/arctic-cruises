@@ -1,5 +1,5 @@
 .hero {
-  min-height: 600px;
+  min-height: 650px;
 
   img {
     position: absolute;
@@ -13,7 +13,7 @@
 }
 
 .hero__wrapper {
-  padding: 158px 95px 0;
+  padding: 150px 20px 0 95px;
 
   h1 {
     @include clear-content(12px);
@@ -34,7 +34,7 @@
 
 @media (max-width: $tablet) {
   .hero {
-    min-height: 675px;
+    min-height: 660px;
 
     img {
       max-height: 638px;
@@ -42,7 +42,7 @@
   }
 
   .hero__wrapper {
-    padding: 214px 46px 0;
+    padding: 200px 20px 0 45px;
 
     h1 {
       @include font(50px, 61px);
@@ -64,7 +64,7 @@
   }
 
   .hero__wrapper {
-    padding: 41px 18px 45px;
+    padding: 79px 20px 0 15px;
 
     h1 {
       @include font(36px, 45px);

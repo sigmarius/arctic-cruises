@@ -5,6 +5,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom center;
+  background-color: #bdd7f5;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/form-bg-desktop@2x.jpg");
@@ -31,18 +32,19 @@
   p {
     @include clear-content(0);
     @include font(18px, 27px);
-    padding-right: 150px;
+    padding-right: 105px;
   }
 }
 
 form {
+  position: relative;
   width: 403px;
   min-height: 455px;
   padding: 44px 50px 48px;
   background-color: $text-color;
 
   p {
-    @include clear-content(27px);
+    @include clear-content(26px);
     @include font(18px, 27px);
     font-weight: 500;
     color: $text-white;
@@ -52,11 +54,18 @@ form {
     width: 100%;
     margin-bottom: 17px;
     padding: 12px;
+    border-radius: 0;
+    appearance: none;
 
     &::placeholder {
       @include font(14px, 21px);
       color: $text-color;
     }
+  }
+
+  input[type="checkbox"] {
+    left: 60px;
+    bottom: 125px;
   }
 
   input[type="checkbox"] + label {
@@ -118,7 +127,7 @@ form {
 
     p {
       margin-bottom: 50px;
-      padding: 0 135px;
+      padding: 0 115px;
     }
   }
 }
@@ -153,9 +162,11 @@ form {
 
   form {
     width: 100%;
+    max-width: 403px;
     padding: 35px 30px 40px;
 
     p {
+      margin-bottom: 28px;
       line-height: 25px;
       text-align: center;
     }

@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Круизы в Антарктику</title>
-    <link rel="preload" href="fonts/montserrat-v14-cyrillic-regular.woff2" as="font">
-    <link rel="preload" href="fonts/montserrat-v14-cyrillic-500.woff2" as="font">
-    <link rel="preload" href="fonts/montserrat-v14-cyrillic-600.woff2" as="font">
-    <link rel="preload" href="fonts/montserrat-v15-cyrillic-700.woff2" as="font">
+    <link rel="preload" href="fonts/montserrat-v14-cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="fonts/montserrat-v14-cyrillic-500.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="fonts/montserrat-v14-cyrillic-600.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="fonts/montserrat-v15-cyrillic-700.woff2" as="font" type="font/woff2" crossorigin="">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -111,7 +111,7 @@
         <div class="cruises__wrapper wrapper">
           <h2>Ближайшие круизы</h2>
           <ul class="cruises__list">
-            <li class="cruises__item">
+            <li class="cruises__item" tabindex="0">
               <div class="cruises__item-front">
                 <figure>
                   <figcaption>Круиз “Астория”</figcaption>
@@ -146,7 +146,7 @@
                 <a class="cruises__button button" href="#">Забронировать</a>
               </div>
             </li>
-            <li class="cruises__item">
+            <li class="cruises__item" tabindex="0">
               <div class="cruises__item-front">
                 <figure>
                   <figcaption>Круиз “Элайн”</figcaption>
@@ -181,7 +181,7 @@
                 <a class="cruises__button button" href="#">Забронировать</a>
               </div>
             </li>
-            <li class="cruises__item">
+            <li class="cruises__item" tabindex="0">
               <div class="cruises__item-front">
                 <figure>
                   <figcaption>Круиз “Атлантис”</figcaption>
@@ -216,7 +216,7 @@
                 <a class="cruises__button button" href="#">Забронировать</a>
               </div>
             </li>
-            <li class="cruises__item">
+            <li class="cruises__item" tabindex="0">
               <div class="cruises__item-front">
                 <figure>
                   <figcaption>Круиз “Одиссей”</figcaption>
@@ -251,7 +251,7 @@
                 <a class="cruises__button button" href="#">Забронировать</a>
               </div>
             </li>
-            <li class="cruises__item">
+            <li class="cruises__item" tabindex="0">
               <div class="cruises__item-front">
                 <figure>
                   <figcaption>Круиз “Олимпия”</figcaption>
@@ -286,7 +286,7 @@
                 <a class="cruises__button button" href="#">Забронировать</a>
               </div>
             </li>
-            <li class="cruises__item">
+            <li class="cruises__item" tabindex="0">
               <div class="cruises__item-front">
                 <figure>
                   <figcaption>Круиз “Аврора”</figcaption>
@@ -321,7 +321,7 @@
                 <a class="cruises__button button" href="#">Забронировать</a>
               </div>
             </li>
-            <li class="cruises__item">
+            <li class="cruises__item" tabindex="0">
               <div class="cruises__item-front">
                 <figure>
                   <figcaption>Круиз “Леонор”</figcaption>
@@ -356,7 +356,7 @@
                 <a class="cruises__button button" href="#">Забронировать</a>
               </div>
             </li>
-            <li class="cruises__item">
+            <li class="cruises__item" tabindex="0">
               <div class="cruises__item-front">
                 <figure>
                   <figcaption>Круиз “Минион - 1”</figcaption>
@@ -398,14 +398,14 @@
         <div class="feedback__wrapper wrapper">
           <div class="feedback__text">
             <h2>Раннее бронирование</h2>
-            <p>Забронируйте тур за&nbsp;3-6&nbsp;месяцев до&nbsp;даты выезда и&nbsp;сэкономьте до 50%</p>
+            <p>Забронируйте тур за&nbsp;3&nbsp;-&nbsp;6&nbsp;месяцев&nbsp;до&nbsp;даты выезда и&nbsp;сэкономьте до 50%</p>
           </div>
           <form action="https://echo.htmlacademy.ru" method="POST">
             <p>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с вами в&nbsp;ближайшее время</p>
             <label class="visually-hidden" for="name">Имя</label>
             <input type="text" id="name" name="name" placeholder="Валерия" required>
             <label class="visually-hidden" for="phone">Номер телефона</label>
-            <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" placeholder="89236889975" required>
+            <input type="tel" id="phone" name="phone" placeholder="89236889975" required>
             <label class="visually-hidden" for="email">E-mail</label>
             <input type="email" id="email" name="email" placeholder="grishaewa.lera@gmail.com" required>
             <input class="visually-hidden" type="checkbox" id="agreement" name="agreement" checked="" required>

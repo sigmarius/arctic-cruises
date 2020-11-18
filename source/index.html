@@ -405,7 +405,7 @@
             <label class="visually-hidden" for="name">Имя</label>
             <input type="text" id="name" name="name" placeholder="Валерия" required>
             <label class="visually-hidden" for="phone">Номер телефона</label>
-            <input type="tel" id="phone" name="phone" placeholder="89236889975" required>
+            <input type="tel" id="phone" name="phone" placeholder="89236889975" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" maxlength="12" title="+7(или 8), не менее 7 и не более 10 цифр" required>
             <label class="visually-hidden" for="email">E-mail</label>
             <input type="email" id="email" name="email" placeholder="grishaewa.lera@gmail.com" required>
             <input class="visually-hidden" type="checkbox" id="agreement" name="agreement" checked="" required>

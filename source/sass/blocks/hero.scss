@@ -1,5 +1,21 @@
 .hero {
-  min-height: 650px;
+  min-height: 685px;
+
+  @media (min-width: $desktop) and (max-width: 1100px) {
+    min-height: calc(685px - 25vh);
+  }
+
+  @media (min-width: 1101px) and (max-width: 1200px) {
+    min-height: calc(685px - 20vh);
+  }
+
+  @media (min-width: 1201px) and (max-width: 1300px) {
+    min-height: calc(685px - 15vh);
+  }
+
+  @media (min-width: 1301px) and (max-width: 1366px) {
+    min-height: calc(685px - 10vh);
+  }
 
   img {
     position: absolute;
@@ -13,7 +29,7 @@
 }
 
 .hero__wrapper {
-  padding: 150px 20px 0 95px;
+  padding: 185px 20px 0 95px;
 
   h1 {
     @include clear-content(12px);
